@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://datafrance.herokuapp.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">input:invalid {
+    outline: solid red;
+}
+
+input:valid {
+    outline: none black;
+}</style><style type="text/css">.Select,.Select-control{position:relative}.Select-control,.Select-input>input{width:100%;cursor:default;outline:0}.Select-arrow-zone,.Select-clear-zone,.Select-loading-zone{text-align:center;cursor:pointer}.Select,.Select div,.Select input,.Select span{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.Select.is-disabled>.Select-control{background-color:#f9f9f9}.Select.is-disabled>.Select-control:hover{box-shadow:none}.Select.is-disabled .Select-arrow-zone{cursor:default;pointer-events:none;opacity:.35}.Select-control{background-color:#fff;border-radius:4px;border:1px solid #ccc;color:#333;display:table;border-spacing:0;border-collapse:separate;height:36px;overflow:hidden}.is-searchable.is-focused:not(.is-open)>.Select-control,.is-searchable.is-open>.Select-control{cursor:text}.Select-control:hover{box-shadow:0 1px 0 rgba(0,0,0,.06)}.Select-control .Select-input:focus{outline:0}.is-open>.Select-control{border-bottom-right-radius:0;border-bottom-left-radius:0;background:#fff;border-color:#b3b3b3 #ccc #d9d9d9}.is-open>.Select-control .Select-arrow{top:-2px;border-color:transparent transparent #999;border-width:0 5px 5px}.is-focused:not(.is-open)>.Select-control{border-color:#007eff;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 0 3px rgba(0,126,255,.1)}.Select--single>.Select-control .Select-value,.Select-placeholder{bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.has-value.Select--single>.Select-control .Select-value .Select-value-label,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{color:#333}.has-value.Select--single>.Select-control .Select-value a.Select-value-label,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label{cursor:pointer;text-decoration:none}.has-value.Select--single>.Select-control .Select-value a.Select-value-label:focus,.has-value.Select--single>.Select-control .Select-value a.Select-value-label:hover,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:focus,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:hover{color:#007eff;outline:0;text-decoration:underline}.Select-input{height:34px;padding-left:10px;padding-right:10px;vertical-align:middle}.Select-input>input{background:none;border:0;box-shadow:none;display:inline-block;font-family:inherit;font-size:inherit;margin:0;line-height:14px;padding:8px 0 12px;-webkit-appearance:none}.Select-loading,.Select-loading-zone{width:16px;position:relative;vertical-align:middle}.is-focused .Select-input>input{cursor:text}.has-value.is-pseudo-focused .Select-input{opacity:0}.Select-control:not(.is-searchable)>.Select-input{outline:0}.Select-loading-zone{display:table-cell}.Select-loading{-webkit-animation:Select-animation-spin .4s infinite linear;-o-animation:Select-animation-spin .4s infinite linear;animation:Select-animation-spin .4s infinite linear;height:16px;box-sizing:border-box;border-radius:50%;border:2px solid #ccc;border-right-color:#333;display:inline-block}.Select-clear-zone{-webkit-animation:Select-animation-fadeIn .2s;-o-animation:Select-animation-fadeIn .2s;animation:Select-animation-fadeIn .2s;color:#999;display:table-cell;position:relative;vertical-align:middle;width:17px}.Select-clear-zone:hover{color:#D0021B}.Select-clear{display:inline-block;font-size:18px;line-height:1}.Select--multi .Select-clear-zone{width:17px}.Select-arrow-zone{display:table-cell;position:relative;vertical-align:middle;width:25px;padding-right:5px}.Select--multi .Select-multi-value-wrapper,.Select-arrow{display:inline-block}.Select-arrow{border-color:#999 transparent transparent;border-style:solid;border-width:5px 5px 2.5px;height:0;width:0;position:relative}.Select-arrow-zone:hover>.Select-arrow,.is-open .Select-arrow{border-top-color:#666}.Select .Select-aria-only{display:inline-block;height:1px;width:1px;margin:-1px;clip:rect(0,0,0,0);overflow:hidden;float:left}.Select-noresults,.Select-option{box-sizing:border-box;display:block;padding:8px 10px}@-webkit-keyframes Select-animation-fadeIn{from{opacity:0}to{opacity:1}}@keyframes Select-animation-fadeIn{from{opacity:0}to{opacity:1}}.Select-menu-outer{border-bottom-right-radius:4px;border-bottom-left-radius:4px;background-color:#fff;border:1px solid #ccc;border-top-color:#e6e6e6;box-shadow:0 1px 0 rgba(0,0,0,.06);box-sizing:border-box;margin-top:-1px;max-height:200px;position:absolute;top:100%;width:100%;z-index:1;-webkit-overflow-scrolling:touch}.Select-menu{max-height:198px;overflow-y:auto}.Select-option{background-color:#fff;color:#666;cursor:pointer}.Select-option:last-child{border-bottom-right-radius:4px;border-bottom-left-radius:4px}.Select-option.is-selected{background-color:#f5faff;background-color:rgba(0,126,255,.04);color:#333}.Select-option.is-focused{background-color:#ebf5ff;background-color:rgba(0,126,255,.08);color:#333}.Select-option.is-disabled{color:#ccc;cursor:default}.Select-noresults{color:#999;cursor:default}.Select--multi .Select-input{vertical-align:middle;margin-left:10px;padding:0}.Select--multi.has-value .Select-input{margin-left:5px}.Select--multi .Select-value{background-color:#ebf5ff;background-color:rgba(0,126,255,.08);border-radius:2px;border:1px solid #c2e0ff;border:1px solid rgba(0,126,255,.24);color:#007eff;display:inline-block;font-size:.9em;line-height:1.4;margin-left:5px;margin-top:5px;vertical-align:top}.Select--multi .Select-value-icon,.Select--multi .Select-value-label{display:inline-block;vertical-align:middle}.Select--multi .Select-value-label{border-bottom-right-radius:2px;border-top-right-radius:2px;cursor:default;padding:2px 5px}.Select--multi a.Select-value-label{color:#007eff;cursor:pointer;text-decoration:none}.Select--multi a.Select-value-label:hover{text-decoration:underline}.Select--multi .Select-value-icon{cursor:pointer;border-bottom-left-radius:2px;border-top-left-radius:2px;border-right:1px solid #c2e0ff;border-right:1px solid rgba(0,126,255,.24);padding:1px 5px 3px}.Select--multi .Select-value-icon:focus,.Select--multi .Select-value-icon:hover{background-color:#d8eafd;background-color:rgba(0,113,230,.08);color:#0071e6}.Select--multi .Select-value-icon:active{background-color:#c2e0ff;background-color:rgba(0,126,255,.24)}.Select--multi.is-disabled .Select-value{background-color:#fcfcfc;border:1px solid #e3e3e3;color:#333}.Select--multi.is-disabled .Select-value-icon{cursor:not-allowed;border-right:1px solid #e3e3e3}.Select--multi.is-disabled .Select-value-icon:active,.Select--multi.is-disabled .Select-value-icon:focus,.Select--multi.is-disabled .Select-value-icon:hover{background-color:#fcfcfc}@keyframes Select-animation-spin{to{transform:rotate(1turn)}}@-webkit-keyframes Select-animation-spin{to{-webkit-transform:rotate(1turn)}}</style><style type="text/css">.dash-logout-btn {
+    padding: 1rem;
+    background-color: #119DFF;
+    border: 1px solid #119DFF;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dash-logout-btn:hover, .dash-logout-btn:focus {
+    background-color: #0d76bf;
+    border: 1px solid #0d76bf;
+}
+
+.dash-logout-frame {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+</style><style type="text/css">.PresetDateRangePicker_panel {
+  padding: 0 22px 11px
+}
+.PresetDateRangePicker_button {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background: 0 0;
+  border: 2px solid #00a699;
+  color: #00a699;
+  padding: 4px 12px;
+  margin-right: 8px;
+  font: inherit;
+  font-weight: 700;
+  line-height: normal;
+  overflow: visible;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer
+}
+.PresetDateRangePicker_button:active {
+  outline: 0
+}
+.PresetDateRangePicker_button__selected {
+  color: #fff;
+  background: #00a699
+}
+.SingleDatePickerInput {
+  display: inline-block;
+  background-color: #fff
+}
+.SingleDatePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb
+}
+.SingleDatePickerInput__rtl {
+  direction: rtl
+}
+.SingleDatePickerInput__disabled {
+  background-color: #f2f2f2
+}
+.SingleDatePickerInput__block {
+  display: block
+}
+.SingleDatePickerInput__showClearDate {
+  padding-right: 30px
+}
+.SingleDatePickerInput_clearDate {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.SingleDatePickerInput_clearDate__default:focus,
+.SingleDatePickerInput_clearDate__default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.SingleDatePickerInput_clearDate__small {
+  padding: 6px
+}
+.SingleDatePickerInput_clearDate__hide {
+  visibility: hidden
+}
+.SingleDatePickerInput_clearDate_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.SingleDatePickerInput_clearDate_svg__small {
+  height: 9px
+}
+.SingleDatePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.SingleDatePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.SingleDatePicker {
+  position: relative;
+  display: inline-block
+}
+.SingleDatePicker__block {
+  display: block
+}
+.SingleDatePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.SingleDatePicker_picker__rtl {
+  direction: rtl
+}
+.SingleDatePicker_picker__directionLeft {
+  left: 0
+}
+.SingleDatePicker_picker__directionRight {
+  right: 0
+}
+.SingleDatePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.SingleDatePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.SingleDatePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.SingleDatePicker_closeButton:focus,
+.SingleDatePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.SingleDatePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_buttonReset {
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_buttonReset:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_show {
+  width: 33px;
+  height: 26px;
+  position: absolute;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_show::before {
+  content: "";
+  display: block;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-top: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight:hover::before {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topRight {
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight::before {
+  border-bottom: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight:hover::before {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topLeft {
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft::before {
+  border-bottom: 26px solid transparent;
+  border-left: 33px solid #00a699;
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft:hover::before {
+  border-left: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_showSpan {
+  color: #fff;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_showSpan__bottomRight {
+  bottom: 0;
+  right: 5px
+}
+.DayPickerKeyboardShortcuts_showSpan__topRight {
+  top: 1px;
+  right: 5px
+}
+.DayPickerKeyboardShortcuts_showSpan__topLeft {
+  top: 1px;
+  left: 5px
+}
+.DayPickerKeyboardShortcuts_panel {
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 22px;
+  margin: 33px;
+  text-align: left
+}
+.DayPickerKeyboardShortcuts_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0
+}
+.DayPickerKeyboardShortcuts_list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_close:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_closeSvg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_closeSvg:focus,
+.DayPickerKeyboardShortcuts_closeSvg:hover {
+  fill: #82888a
+}
+.CalendarDay {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center
+}
+.CalendarDay:active {
+  outline: 0
+}
+.CalendarDay__defaultCursor {
+  cursor: default
+}
+.CalendarDay__default {
+  border: 1px solid #e4e7e7;
+  color: #484848;
+  background: #fff
+}
+.CalendarDay__default:hover {
+  background: #e4e7e7;
+  border: 1px solid #e4e7e7;
+  color: inherit
+}
+.CalendarDay__hovered_offset {
+  background: #f4f5f5;
+  border: 1px double #e4e7e7;
+  color: inherit
+}
+.CalendarDay__outside {
+  border: 0;
+  background: #fff;
+  color: #484848
+}
+.CalendarDay__outside:hover {
+  border: 0
+}
+.CalendarDay__blocked_minimum_nights {
+  background: #fff;
+  border: 1px solid #eceeee;
+  color: #cacccd
+}
+.CalendarDay__blocked_minimum_nights:active,
+.CalendarDay__blocked_minimum_nights:hover {
+  background: #fff;
+  color: #cacccd
+}
+.CalendarDay__highlighted_calendar {
+  background: #ffe8bc;
+  color: #484848
+}
+.CalendarDay__highlighted_calendar:active,
+.CalendarDay__highlighted_calendar:hover {
+  background: #ffce71;
+  color: #484848
+}
+.CalendarDay__selected_span {
+  background: #66e2da;
+  border: 1px double #33dacd;
+  color: #fff
+}
+.CalendarDay__selected_span:active,
+.CalendarDay__selected_span:hover {
+  background: #33dacd;
+  border: 1px double #33dacd;
+  color: #fff
+}
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background: #00a699;
+  border: 1px double #00a699;
+  color: #fff
+}
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover {
+  background: #b2f1ec;
+  border: 1px double #80e8e0;
+  color: #007a87
+}
+.CalendarDay__hovered_span:active {
+  background: #80e8e0;
+  border: 1px double #80e8e0;
+  color: #007a87
+}
+.CalendarDay__blocked_calendar,
+.CalendarDay__blocked_calendar:active,
+.CalendarDay__blocked_calendar:hover {
+  background: #cacccd;
+  border: 1px solid #cacccd;
+  color: #82888a
+}
+.CalendarDay__blocked_out_of_range,
+.CalendarDay__blocked_out_of_range:active,
+.CalendarDay__blocked_out_of_range:hover {
+  background: #fff;
+  border: 1px solid #e4e7e7;
+  color: #cacccd
+}
+.CalendarDay__hovered_start_first_possible_end {
+  background: #eceeee;
+  border: 1px double #eceeee
+}
+.CalendarDay__hovered_start_blocked_min_nights {
+  background: #eceeee;
+  border: 1px double #e4e7e7
+}
+.CalendarMonth {
+  background: #fff;
+  text-align: center;
+  vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.CalendarMonth_table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.CalendarMonth_verticalSpacing {
+  border-collapse: separate
+}
+.CalendarMonth_caption {
+  color: #484848;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 37px;
+  caption-side: initial
+}
+.CalendarMonth_caption__verticalScrollable {
+  padding-top: 12px;
+  padding-bottom: 7px
+}
+.CalendarMonthGrid {
+  background: #fff;
+  text-align: left;
+  z-index: 0
+}
+.CalendarMonthGrid__animating {
+  z-index: 1
+}
+.CalendarMonthGrid__horizontal {
+  position: absolute;
+  left: 9px
+}
+.CalendarMonthGrid__vertical {
+  margin: 0 auto
+}
+.CalendarMonthGrid__vertical_scrollable {
+  margin: 0 auto;
+  overflow-y: scroll
+}
+.CalendarMonthGrid_month__horizontal {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 100%
+}
+.CalendarMonthGrid_month__hideForAnimation {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none
+}
+.CalendarMonthGrid_month__hidden {
+  visibility: hidden
+}
+.DayPickerNavigation {
+  position: relative;
+  z-index: 2
+}
+.DayPickerNavigation__horizontal {
+  height: 0
+}
+.DayPickerNavigation__verticalDefault {
+  position: absolute;
+  width: 100%;
+  height: 52px;
+  bottom: 0;
+  left: 0
+}
+.DayPickerNavigation__verticalScrollableDefault {
+  position: relative
+}
+.DayPickerNavigation_button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0
+}
+.DayPickerNavigation_button__default {
+  border: 1px solid #e4e7e7;
+  background-color: #fff;
+  color: #757575
+}
+.DayPickerNavigation_button__default:focus,
+.DayPickerNavigation_button__default:hover {
+  border: 1px solid #c4c4c4
+}
+.DayPickerNavigation_button__default:active {
+  background: #f2f2f2
+}
+.DayPickerNavigation_button__disabled {
+  cursor: default;
+  border: 1px solid #f2f2f2
+}
+.DayPickerNavigation_button__disabled:focus,
+.DayPickerNavigation_button__disabled:hover {
+  border: 1px solid #f2f2f2
+}
+.DayPickerNavigation_button__disabled:active {
+  background: 0 0
+}
+.DayPickerNavigation_button__horizontalDefault {
+  position: absolute;
+  top: 18px;
+  line-height: .78;
+  border-radius: 3px;
+  padding: 6px 9px
+}
+.DayPickerNavigation_leftButton__horizontalDefault {
+  left: 22px
+}
+.DayPickerNavigation_rightButton__horizontalDefault {
+  right: 22px
+}
+.DayPickerNavigation_button__verticalDefault {
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 50%
+}
+.DayPickerNavigation_nextButton__verticalDefault {
+  border-left: 0
+}
+.DayPickerNavigation_nextButton__verticalScrollableDefault {
+  width: 100%
+}
+.DayPickerNavigation_svg__horizontal {
+  height: 19px;
+  width: 19px;
+  fill: #82888a;
+  display: block
+}
+.DayPickerNavigation_svg__vertical {
+  height: 42px;
+  width: 42px;
+  fill: #484848
+}
+.DayPickerNavigation_svg__disabled {
+  fill: #f2f2f2
+}
+.DayPicker {
+  background: #fff;
+  position: relative;
+  text-align: left
+}
+.DayPicker__horizontal {
+  background: #fff
+}
+.DayPicker__verticalScrollable {
+  height: 100%
+}
+.DayPicker__hidden {
+  visibility: hidden
+}
+.DayPicker__withBorder {
+  box-shadow: 0 2px 6px rgba(0,0,0,.05),0 0 0 1px rgba(0,0,0,.07);
+  border-radius: 3px
+}
+.DayPicker_portal__horizontal {
+  box-shadow: none;
+  position: absolute;
+  left: 50%;
+  top: 50%
+}
+.DayPicker_portal__vertical {
+  position: initial
+}
+.DayPicker_focusRegion {
+  outline: 0
+}
+.DayPicker_calendarInfo__horizontal,
+.DayPicker_wrapper__horizontal {
+  display: inline-block;
+  vertical-align: top
+}
+.DayPicker_weekHeaders {
+  position: relative
+}
+.DayPicker_weekHeaders__horizontal {
+  margin-left: 9px
+}
+.DayPicker_weekHeader {
+  color: #757575;
+  position: absolute;
+  top: 62px;
+  z-index: 2;
+  text-align: left
+}
+.DayPicker_weekHeader__vertical {
+  left: 50%
+}
+.DayPicker_weekHeader__verticalScrollable {
+  top: 0;
+  display: table-row;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fff;
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  text-align: center
+}
+.DayPicker_weekHeader_ul {
+  list-style: none;
+  margin: 1px 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px
+}
+.DayPicker_weekHeader_li {
+  display: inline-block;
+  text-align: center
+}
+.DayPicker_transitionContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px
+}
+.DayPicker_transitionContainer__horizontal {
+  -webkit-transition: height .2s ease-in-out;
+  -moz-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out
+}
+.DayPicker_transitionContainer__vertical {
+  width: 100%
+}
+.DayPicker_transitionContainer__verticalScrollable {
+  padding-top: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll
+}
+.DateInput {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  vertical-align: middle
+}
+.DateInput__small {
+  width: 97px
+}
+.DateInput__block {
+  width: 100%
+}
+.DateInput__disabled {
+  background: #f2f2f2;
+  color: #dbdbdb
+}
+.DateInput_input {
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 24px;
+  color: #484848;
+  background-color: #fff;
+  width: 100%;
+  padding: 11px 11px 9px;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 0;
+  border-radius: 0
+}
+.DateInput_input__small {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: .2px;
+  padding: 7px 7px 5px
+}
+.DateInput_input__regular {
+  font-weight: auto
+}
+.DateInput_input__readOnly {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.DateInput_input__focused {
+  outline: 0;
+  background: #fff;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #008489;
+  border-left: 0
+}
+.DateInput_input__disabled {
+  background: #f2f2f2;
+  font-style: italic
+}
+.DateInput_screenReaderMessage {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+.DateInput_fang {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 22px;
+  z-index: 2
+}
+.DateInput_fangShape {
+  fill: #fff
+}
+.DateInput_fangStroke {
+  stroke: #dbdbdb;
+  fill: transparent
+}
+.DateRangePickerInput {
+  background-color: #fff;
+  display: inline-block
+}
+.DateRangePickerInput__disabled {
+  background: #f2f2f2
+}
+.DateRangePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb
+}
+.DateRangePickerInput__rtl {
+  direction: rtl
+}
+.DateRangePickerInput__block {
+  display: block
+}
+.DateRangePickerInput__showClearDates {
+  padding-right: 30px
+}
+.DateRangePickerInput_arrow {
+  display: inline-block;
+  vertical-align: middle;
+  color: #484848
+}
+.DateRangePickerInput_arrow_svg {
+  vertical-align: middle;
+  fill: #484848;
+  height: 24px;
+  width: 24px
+}
+.DateRangePickerInput_clearDates {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.DateRangePickerInput_clearDates__small {
+  padding: 6px
+}
+.DateRangePickerInput_clearDates_default:focus,
+.DateRangePickerInput_clearDates_default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.DateRangePickerInput_clearDates__hide {
+  visibility: hidden
+}
+.DateRangePickerInput_clearDates_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.DateRangePickerInput_clearDates_svg__small {
+  height: 9px
+}
+.DateRangePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.DateRangePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.DateRangePicker {
+  position: relative;
+  display: inline-block
+}
+.DateRangePicker__block {
+  display: block
+}
+.DateRangePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.DateRangePicker_picker__rtl {
+  direction: rtl
+}
+.DateRangePicker_picker__directionLeft {
+  left: 0
+}
+.DateRangePicker_picker__directionRight {
+  right: 0
+}
+.DateRangePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.DateRangePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.DateRangePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.DateRangePicker_closeButton:focus,
+.DateRangePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.DateRangePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}</style><style type="text/css">.DateInput_input {
+    box-sizing: border-box;
+}
+
+.DayPickerNavigation__verticalDefault {
+    text-align: center;
+    height: initial;
+    padding: 10px 0px;
+}
+
+.DayPickerNavigation_svg__vertical {
+    height: 20px;
+}
+</style><style type="text/css">.VirtualSelectGrid {
+  z-index: 1;
+}
+
+.VirtualizedSelectOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .5rem;
+}
+.VirtualizedSelectFocusedOption {
+  background-color: rgba(0, 126, 255, 0.1);
+}
+.VirtualizedSelectDisabledOption {
+  opacity: 0.5;
+}
+.VirtualizedSelectSelectedOption {
+  font-weight: bold;
+}
+</style><style type="text/css">/* Collection default theme */
+
+.ReactVirtualized__Collection {
+}
+
+.ReactVirtualized__Collection__innerScrollContainer {
+}
+
+/* Grid default theme */
+
+.ReactVirtualized__Grid {
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+}
+
+/* Table default theme */
+
+.ReactVirtualized__Table {
+}
+
+.ReactVirtualized__Table__Grid {
+}
+
+.ReactVirtualized__Table__headerRow {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ReactVirtualized__Table__row {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ReactVirtualized__Table__headerTruncatedText {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ReactVirtualized__Table__headerColumn,
+.ReactVirtualized__Table__rowColumn {
+  margin-right: 10px;
+  min-width: 0px;
+}
+.ReactVirtualized__Table__rowColumn {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ReactVirtualized__Table__headerColumn:first-of-type,
+.ReactVirtualized__Table__rowColumn:first-of-type {
+  margin-left: 10px;
+}
+.ReactVirtualized__Table__sortableHeaderColumn {
+  cursor: pointer;
+}
+
+.ReactVirtualized__Table__sortableHeaderIconContainer {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ReactVirtualized__Table__sortableHeaderIcon {
+  -webkit-flex: 0 0 24px;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+/* List default theme */
+
+.ReactVirtualized__List {
+}
+</style><style type="text/css">.dash-dropdown .Select-menu-outer {
+    z-index: 1000;
+}</style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <title>Dash</title>
+        <link rel="icon" type="image/x-icon" href="https://datafrance.herokuapp.com/_favicon.ico?v=1.13.4">
+        
+    <script charset="utf-8" src="./Dashboard-DataFrance_files/async-dropdown.v1_10_1m1592438751.js.téléchargement"></script><style type="text/css" data-styled-jsx="">.tab.jsx-2411128311{display:inline-block;background-color:#f9f9f9;border:1px solid #d6d6d6;border-bottom:none;padding:20px 25px;-webkit-transition:background-color,color 200ms;transition:background-color,color 200ms;width:100%;text-align:center;box-sizing:border-box;}.tab.jsx-2411128311:last-of-type{border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;}.tab.jsx-2411128311:hover{cursor:pointer;}.tab--selected.jsx-2411128311{border-top:2px solid #1975FA;color:black;background-color:white;}.tab--selected.jsx-2411128311:hover{background-color:white;}.tab--disabled.jsx-2411128311{color:#d6d6d6;}@media screen and (min-width:800px){.tab.jsx-2411128311{border:1px solid #d6d6d6;border-right:none;width: calc(100% / 10);;}.tab--selected.jsx-2411128311,.tab.jsx-2411128311:last-of-type.tab--selected{border-bottom:none;border-top: 2px solid #1975FA;;}}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJjLWFuZHJlcml2ZXQvcHJvamVjdHMvcmVsZWFzZS9EYXNoQ29yZS9kYXNoLWNvcmUtY29tcG9uZW50cy9zcmMvY29tcG9uZW50cy9UYWJzLnJlYWN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQStEd0IsQUFHMEMsQUFXK0IsQUFJckMsQUFHbUMsQUFLM0IsQUFHVCxBQUtvQyxBQU0zQixjQVYzQixDQVhBLElBc0JvQyxFQXJDYyxFQXVCbEQsdUJBUTBCLEVBT3RCLEVBcEJZLEVBUHlDLFVBUTlCLEVBYVMsR0EvQmMsa0JBbUJsRCxRQWFJLFlBckJKLFFBVnVCLG1CQUNELGtCQUN1Qix3RkFDOUIsV0FDTyxrQkFDSSxzQkFDMUIiLCJmaWxlIjoiL1VzZXJzL21hcmMtYW5kcmVyaXZldC9wcm9qZWN0cy9yZWxlYXNlL0Rhc2hDb3JlL2Rhc2gtY29yZS1jb21wb25lbnRzL3NyYy9jb21wb25lbnRzL1RhYnMucmVhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQtZGlzYWJsZSByZWFjdC9wcm9wLXR5cGVzICovXG5pbXBvcnQgUmVhY3QsIHtDb21wb25lbnR9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQge2hhcywgaXMsIGlzTmlsfSBmcm9tICdyYW1kYSc7XG5cbi8vIEVuaGFuY2VkVGFiIGlzIGRlZmluZWQgaGVyZSBpbnN0ZWFkIG9mIGluIFRhYi5yZWFjdC5qcyBiZWNhdXNlIGlmIGV4cG9ydGVkIHRoZXJlLFxuLy8gaXQgd2lsbCBtZXNzIHVwIHRoZSBQeXRob24gaW1wb3J0cyBhbmQgbWV0YWRhdGEuanNvblxuY29uc3QgRW5oYW5jZWRUYWIgPSAoe1xuICAgIGlkLFxuICAgIGxhYmVsLFxuICAgIHNlbGVjdGVkLFxuICAgIGNsYXNzTmFtZSxcbiAgICBzdHlsZSxcbiAgICBzZWxlY3RlZENsYXNzTmFtZSxcbiAgICBzZWxlY3RlZF9zdHlsZSxcbiAgICBzZWxlY3RIYW5kbGVyLFxuICAgIHZhbHVlLFxuICAgIGRpc2FibGVkLFxuICAgIGRpc2FibGVkX3N0eWxlLFxuICAgIGRpc2FibGVkX2NsYXNzTmFtZSxcbiAgICBtb2JpbGVfYnJlYWtwb2ludCxcbiAgICBhbW91bnRPZlRhYnMsXG4gICAgY29sb3JzLFxuICAgIHZlcnRpY2FsLFxuICAgIGxvYWRpbmdfc3RhdGUsXG59KSA9PiB7XG4gICAgbGV0IHRhYlN0eWxlID0gc3R5bGU7XG4gICAgaWYgKGRpc2FibGVkKSB7XG4gICAgICAgIHRhYlN0eWxlID0ge3RhYlN0eWxlLCAuLi5kaXNhYmxlZF9zdHlsZX07XG4gICAgfVxuICAgIGlmIChzZWxlY3RlZCkge1xuICAgICAgICB0YWJTdHlsZSA9IHt0YWJTdHlsZSwgLi4uc2VsZWN0ZWRfc3R5bGV9O1xuICAgIH1cbiAgICBsZXQgdGFiQ2xhc3NOYW1lID0gYHRhYiAke2NsYXNzTmFtZSB8fCAnJ31gO1xuICAgIGlmIChkaXNhYmxlZCkge1xuICAgICAgICB0YWJDbGFzc05hbWUgKz0gYCB0YWItLWRpc2FibGVkICR7ZGlzYWJsZWRfY2xhc3NOYW1lIHx8ICcnfWA7XG4gICAgfVxuICAgIGlmIChzZWxlY3RlZCkge1xuICAgICAgICB0YWJDbGFzc05hbWUgKz0gYCB0YWItLXNlbGVjdGVkICR7c2VsZWN0ZWRDbGFzc05hbWUgfHwgJyd9YDtcbiAgICB9XG4gICAgbGV0IGxhYmVsRGlzcGxheTtcbiAgICBpZiAoaXMoQXJyYXksIGxhYmVsKSkge1xuICAgICAgICAvLyBsYWJlbCBpcyBhbiBhcnJheSwgc28gaXQgaGFzIGNoaWxkcmVuIHRoYXQgd2Ugd2FudCB0byByZW5kZXJcbiAgICAgICAgbGFiZWxEaXNwbGF5ID0gbGFiZWxbMF0ucHJvcHMuY2hpbGRyZW47XG4gICAgfSBlbHNlIHtcbiAgICAgICAgLy8gZWxzZSBpdCBpcyBhIHN0cmluZywgc28gd2UganVzdCB3YW50IHRvIHJlbmRlciB0aGF0XG4gICAgICAgIGxhYmVsRGlzcGxheSA9IGxhYmVsO1xuICAgIH1cbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2XG4gICAgICAgICAgICBkYXRhLWRhc2gtaXMtbG9hZGluZz17XG4gICAgICAgICAgICAgICAgKGxvYWRpbmdfc3RhdGUgJiYgbG9hZGluZ19zdGF0ZS5pc19sb2FkaW5nKSB8fCB1bmRlZmluZWRcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGNsYXNzTmFtZT17dGFiQ2xhc3NOYW1lfVxuICAgICAgICAgICAgaWQ9e2lkfVxuICAgICAgICAgICAgc3R5bGU9e3RhYlN0eWxlfVxuICAgICAgICAgICAgb25DbGljaz17KCkgPT4ge1xuICAgICAgICAgICAgICAgIGlmICghZGlzYWJsZWQpIHtcbiAgICAgICAgICAgICAgICAgICAgc2VsZWN0SGFuZGxlcih2YWx1ZSk7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfX1cbiAgICAgICAgPlxuICAgICAgICAgICAgPHNwYW4+e2xhYmVsRGlzcGxheX08L3NwYW4+XG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgLnRhYiB7XG4gICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJHtjb2xvcnMuYmFja2dyb3VuZH07XG4gICAgICAgICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICR7Y29sb3JzLmJvcmRlcn07XG4gICAgICAgICAgICAgICAgICAgIGJvcmRlci1ib3R0b206IG5vbmU7XG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDIwcHggMjVweDtcbiAgICAgICAgICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciwgY29sb3IgMjAwbXM7XG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIC50YWI6bGFzdC1vZi10eXBlIHtcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgJHtjb2xvcnMuYm9yZGVyfTtcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICR7Y29sb3JzLmJvcmRlcn07XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIC50YWI6aG92ZXIge1xuICAgICAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIC50YWItLXNlbGVjdGVkIHtcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXRvcDogMnB4IHNvbGlkICR7Y29sb3JzLnByaW1hcnl9O1xuICAgICAgICAgICAgICAgICAgICBjb2xvcjogYmxhY2s7XG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAudGFiLS1zZWxlY3RlZDpob3ZlciB7XG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAudGFiLS1kaXNhYmxlZCB7XG4gICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjZDZkNmQ2O1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6ICR7bW9iaWxlX2JyZWFrcG9pbnR9cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgLnRhYiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAke2NvbG9ycy5ib3JkZXJ9O1xuICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICAgICAgICAgICAgICAgICAgICAgICAgJHt2ZXJ0aWNhbFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgID8gJydcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGB3aWR0aDogY2FsYygxMDAlIC8gJHthbW91bnRPZlRhYnN9KTtgfTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAudGFiLS1zZWxlY3RlZCxcbiAgICAgICAgICAgICAgICAgICAgLnRhYjpsYXN0LW9mLXR5cGUudGFiLS1zZWxlY3RlZCB7XG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItYm90dG9tOiBub25lO1xuICAgICAgICAgICAgICAgICAgICAgICAgJHt2ZXJ0aWNhbFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgID8gYGJvcmRlci1sZWZ0OiAycHggc29saWQgJHtjb2xvcnMucHJpbWFyeX07YFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogYGJvcmRlci10b3A6IDJweCBzb2xpZCAke2NvbG9ycy5wcmltYXJ5fTtgfTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPC9kaXY+XG4gICAgKTtcbn07XG5cbkVuaGFuY2VkVGFiLmRlZmF1bHRQcm9wcyA9IHtcbiAgICBsb2FkaW5nX3N0YXRlOiB7XG4gICAgICAgIGlzX2xvYWRpbmc6IGZhbHNlLFxuICAgICAgICBjb21wb25lbnRfbmFtZTogJycsXG4gICAgICAgIHByb3BfbmFtZTogJycsXG4gICAgfSxcbn07XG5cbi8qKlxuICogQSBEYXNoIGNvbXBvbmVudCB0aGF0IGxldHMgeW91IHJlbmRlciBwYWdlcyB3aXRoIHRhYnMgLSB0aGUgVGFicyBjb21wb25lbnQncyBjaGlsZHJlblxuICogY2FuIGJlIGRjYy5UYWIgY29tcG9uZW50cywgd2hpY2ggY2FuIGhvbGQgYSBsYWJlbCB0aGF0IHdpbGwgYmUgZGlzcGxheWVkIGFzIGEgdGFiLCBhbmQgY2FuIGluIHR1cm4gaG9sZFxuICogY2hpbGRyZW4gY29tcG9uZW50cyB0aGF0IHdpbGwgYmUgdGhhdCB0YWIncyBjb250ZW50LlxuICovXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBUYWJzIGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcykge1xuICAgICAgICBzdXBlcihwcm9wcyk7XG5cbiAgICAgICAgdGhpcy5zZWxlY3RIYW5kbGVyID0gdGhpcy5zZWxlY3RIYW5kbGVyLmJpbmQodGhpcyk7XG4gICAgICAgIHRoaXMucGFyc2VDaGlsZHJlblRvQXJyYXkgPSB0aGlzLnBhcnNlQ2hpbGRyZW5Ub0FycmF5LmJpbmQodGhpcyk7XG4gICAgICAgIHRoaXMudmFsdWVPckRlZmF1bHQgPSB0aGlzLnZhbHVlT3JEZWZhdWx0LmJpbmQodGhpcyk7XG5cbiAgICAgICAgaWYgKCFoYXMoJ3ZhbHVlJywgdGhpcy5wcm9wcykpIHtcbiAgICAgICAgICAgIHRoaXMucHJvcHMuc2V0UHJvcHMoe1xuICAgICAgICAgICAgICAgIHZhbHVlOiB0aGlzLnZhbHVlT3JEZWZhdWx0KCksXG4gICAgICAgICAgICB9KTtcbiAgICAgICAgfVxuICAgIH1cblxuICAgIHZhbHVlT3JEZWZhdWx0KCkge1xuICAgICAgICBpZiAoaGFzKCd2YWx1ZScsIHRoaXMucHJvcHMpKSB7XG4gICAgICAgICAgICByZXR1cm4gdGhpcy5wcm9wcy52YWx1ZTtcbiAgICAgICAgfVxuICAgICAgICBjb25zdCBjaGlsZHJlbiA9IHRoaXMucGFyc2VDaGlsZHJlblRvQXJyYXkoKTtcbiAgICAgICAgaWYgKGNoaWxkcmVuICYmIGNoaWxkcmVuWzBdLnByb3BzLmNoaWxkcmVuKSB7XG4gICAgICAgICAgICByZXR1cm4gY2hpbGRyZW5bMF0ucHJvcHMuY2hpbGRyZW4ucHJvcHMudmFsdWUgfHwgJ3RhYi0xJztcbiAgICAgICAgfVxuICAgICAgICByZXR1cm4gJ3RhYi0xJztcbiAgICB9XG5cbiAgICBwYXJzZUNoaWxkcmVuVG9BcnJheSgpIHtcbiAgICAgICAgaWYgKHRoaXMucHJvcHMuY2hpbGRyZW4gJiYgIWlzKEFycmF5LCB0aGlzLnByb3BzLmNoaWxkcmVuKSkge1xuICAgICAgICAgICAgLy8gaWYgZGNjLlRhYnMuY2hpbGRyZW4gY29udGFpbnMganVzdCBvbmUgc2luZ2xlIGVsZW1lbnQsIGl0IGdldHMgcGFzc2VkIGFzIGFuIG9iamVjdFxuICAgICAgICAgICAgLy8gaW5zdGVhZCBvZiBhbiBhcnJheSAtIHNvIHdlIHB1dCBpbiBpbiBhIGFycmF5IG91cnNlbHZlcyFcbiAgICAgICAgICAgIHJldHVybiBbdGhpcy5wcm9wcy5jaGlsZHJlbl07XG4gICAgICAgIH1cbiAgICAgICAgcmV0dXJuIHRoaXMucHJvcHMuY2hpbGRyZW47XG4gICAgfVxuXG4gICAgc2VsZWN0SGFuZGxlcih2YWx1ZSkge1xuICAgICAgICB0aGlzLnByb3BzLnNldFByb3BzKHt2YWx1ZTogdmFsdWV9KTtcbiAgICB9XG5cbiAgICByZW5kZXIoKSB7XG4gICAgICAgIGxldCBFbmhhbmNlZFRhYnM7XG4gICAgICAgIGxldCBzZWxlY3RlZFRhYjtcblxuICAgICAgICBpZiAodGhpcy5wcm9wcy5jaGlsZHJlbikge1xuICAgICAgICAgICAgY29uc3QgY2hpbGRyZW4gPSB0aGlzLnBhcnNlQ2hpbGRyZW5Ub0FycmF5KCk7XG5cbiAgICAgICAgICAgIGNvbnN0IGFtb3VudE9mVGFicyA9IGNoaWxkcmVuLmxlbmd0aDtcblxuICAgICAgICAgICAgRW5oYW5jZWRUYWJzID0gY2hpbGRyZW4ubWFwKChjaGlsZCwgaW5kZXgpID0+IHtcbiAgICAgICAgICAgICAgICAvLyBUT0RPOiBoYW5kbGUgY29tcG9uZW50cyB0aGF0IGFyZSBub3QgZGNjLlRhYiBjb21wb25lbnRzICh0aHJvdyBlcnJvcilcbiAgICAgICAgICAgICAgICAvLyBlbmhhbmNlIFRhYiBjb21wb25lbnRzIGNvbWluZyBmcm9tIERhc2ggKGFzIGRjYy5UYWIpIHdpdGggbWV0aG9kcyBuZWVkZWQgZm9yIGhhbmRsaW5nIGxvZ2ljXG4gICAgICAgICAgICAgICAgbGV0IGNoaWxkUHJvcHM7XG5cbiAgICAgICAgICAgICAgICBpZiAoXG4gICAgICAgICAgICAgICAgICAgIC8vIGRpc2FibGVkIGlzIGEgZGVmYXVsdFByb3AgKHNvIGl0J3MgYWx3YXlzIHNldClcbiAgICAgICAgICAgICAgICAgICAgLy8gbWVhbmluZyB0aGF0IGlmIGl0J3Mgbm90IHNldCBvbiBjaGlsZC5wcm9wcywgdGhlIGFjdHVhbFxuICAgICAgICAgICAgICAgICAgICAvLyBwcm9wcyB3ZSB3YW50IGFyZSBseWluZyBhIGJpdCBkZWVwZXIgLSB3aGljaCBtZWFucyB0aGV5XG4gICAgICAgICAgICAgICAgICAgIC8vIGFyZSBjb21pbmcgZnJvbSBEYXNoXG4gICAgICAgICAgICAgICAgICAgIGlzTmlsKGNoaWxkLnByb3BzLmRpc2FibGVkKSAmJlxuICAgICAgICAgICAgICAgICAgICBjaGlsZC5wcm9wcy5fZGFzaHByaXZhdGVfbGF5b3V0ICYmXG4gICAgICAgICAgICAgICAgICAgIGNoaWxkLnByb3BzLl9kYXNocHJpdmF0ZV9sYXlvdXQucHJvcHNcbiAgICAgICAgICAgICAgICApIHtcbiAgICAgICAgICAgICAgICAgICAgLy8gcHJvcHMgYXJlIGNvbWluZyBmcm9tIERhc2hcbiAgICAgICAgICAgICAgICAgICAgY2hpbGRQcm9wcyA9IGNoaWxkLnByb3BzLl9kYXNocHJpdmF0ZV9sYXlvdXQucHJvcHM7XG4gICAgICAgICAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgICAgICAgICAgLy8gZWxzZSBwcm9wcyBhcmUgY29taW5nIGZyb20gUmVhY3QgKERlbW8ucmVhY3QuanMsIG9yIFRhYnMudGVzdC5qcylcbiAgICAgICAgICAgICAgICAgICAgY2hpbGRQcm9wcyA9IGNoaWxkLnByb3BzO1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIGlmICghY2hpbGRQcm9wcy52YWx1ZSkge1xuICAgICAgICAgICAgICAgICAgICBjaGlsZFByb3BzID0gey4uLmNoaWxkUHJvcHMsIHZhbHVlOiBgdGFiLSR7aW5kZXggKyAxfWB9O1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIC8vIGNoZWNrIGlmIHRoaXMgY2hpbGQvVGFiIGlzIGN1cnJlbnRseSBzZWxlY3RlZFxuICAgICAgICAgICAgICAgIGlmIChjaGlsZFByb3BzLnZhbHVlID09PSB0aGlzLnZhbHVlT3JEZWZhdWx0KCkpIHtcbiAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRUYWIgPSBjaGlsZDtcbiAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgICA8RW5oYW5jZWRUYWJcbiAgICAgICAgICAgICAgICAgICAgICAgIGtleT17aW5kZXh9XG4gICAgICAgICAgICAgICAgICAgICAgICBpZD17Y2hpbGRQcm9wcy5pZH1cbiAgICAgICAgICAgICAgICAgICAgICAgIGxhYmVsPXtjaGlsZFByb3BzLmxhYmVsfVxuICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWQ9e3RoaXMudmFsdWVPckRlZmF1bHQoKSA9PT0gY2hpbGRQcm9wcy52YWx1ZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdEhhbmRsZXI9e3RoaXMuc2VsZWN0SGFuZGxlcn1cbiAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17Y2hpbGRQcm9wcy5jbGFzc05hbWV9XG4gICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17Y2hpbGRQcm9wcy5zdHlsZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdGVkQ2xhc3NOYW1lPXtjaGlsZFByb3BzLnNlbGVjdGVkX2NsYXNzTmFtZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdGVkX3N0eWxlPXtjaGlsZFByb3BzLnNlbGVjdGVkX3N0eWxlfVxuICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2NoaWxkUHJvcHMudmFsdWV9XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNhYmxlZD17Y2hpbGRQcm9wcy5kaXNhYmxlZH1cbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc2FibGVkX3N0eWxlPXtjaGlsZFByb3BzLmRpc2FibGVkX3N0eWxlfVxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzYWJsZWRfY2xhc3NuYW1lPXtjaGlsZFByb3BzLmRpc2FibGVkX2NsYXNzTmFtZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIG1vYmlsZV9icmVha3BvaW50PXt0aGlzLnByb3BzLm1vYmlsZV9icmVha3BvaW50fVxuICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWw9e3RoaXMucHJvcHMudmVydGljYWx9XG4gICAgICAgICAgICAgICAgICAgICAgICBhbW91bnRPZlRhYnM9e2Ftb3VudE9mVGFic31cbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9ycz17dGhpcy5wcm9wcy5jb2xvcnN9XG4gICAgICAgICAgICAgICAgICAgICAgICBsb2FkaW5nX3N0YXRlPXtjaGlsZFByb3BzLmxvYWRpbmdfc3RhdGV9XG4gICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgKTtcbiAgICAgICAgICAgIH0pO1xuICAgICAgICB9XG5cbiAgICAgICAgY29uc3Qgc2VsZWN0ZWRUYWJDb250ZW50ID0gIWlzTmlsKHNlbGVjdGVkVGFiKSA/IHNlbGVjdGVkVGFiIDogJyc7XG5cbiAgICAgICAgY29uc3QgdGFiQ29udGFpbmVyQ2xhc3MgPSB0aGlzLnByb3BzLnZlcnRpY2FsXG4gICAgICAgICAgICA/ICd0YWItY29udGFpbmVyIHRhYi1jb250YWluZXItLXZlcnQnXG4gICAgICAgICAgICA6ICd0YWItY29udGFpbmVyJztcblxuICAgICAgICBjb25zdCB0YWJDb250ZW50Q2xhc3MgPSB0aGlzLnByb3BzLnZlcnRpY2FsXG4gICAgICAgICAgICA/ICd0YWItY29udGVudCB0YWItY29udGVudC0tdmVydCdcbiAgICAgICAgICAgIDogJ3RhYi1jb250ZW50JztcblxuICAgICAgICBjb25zdCB0YWJQYXJlbnRDbGFzcyA9IHRoaXMucHJvcHMudmVydGljYWxcbiAgICAgICAgICAgID8gJ3RhYi1wYXJlbnQgdGFiLXBhcmVudC0tdmVydCdcbiAgICAgICAgICAgIDogJ3RhYi1wYXJlbnQnO1xuXG4gICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgICAgZGF0YS1kYXNoLWlzLWxvYWRpbmc9e1xuICAgICAgICAgICAgICAgICAgICAodGhpcy5wcm9wcy5sb2FkaW5nX3N0YXRlICYmXG4gICAgICAgICAgICAgICAgICAgICAgICB0aGlzLnByb3BzLmxvYWRpbmdfc3RhdGUuaXNfbG9hZGluZykgfHxcbiAgICAgICAgICAgICAgICAgICAgdW5kZWZpbmVkXG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YCR7dGFiUGFyZW50Q2xhc3N9ICR7dGhpcy5wcm9wcy5wYXJlbnRfY2xhc3NOYW1lIHx8XG4gICAgICAgICAgICAgICAgICAgICcnfWB9XG4gICAgICAgICAgICAgICAgc3R5bGU9e3RoaXMucHJvcHMucGFyZW50X3N0eWxlfVxuICAgICAgICAgICAgICAgIGlkPXtgJHt0aGlzLnByb3BzLmlkfS1wYXJlbnRgfVxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgJHt0YWJDb250YWluZXJDbGFzc30gJHt0aGlzLnByb3BzLmNsYXNzTmFtZSB8fFxuICAgICAgICAgICAgICAgICAgICAgICAgJyd9YH1cbiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3RoaXMucHJvcHMuc3R5bGV9XG4gICAgICAgICAgICAgICAgICAgIGlkPXt0aGlzLnByb3BzLmlkfVxuICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAge0VuaGFuY2VkVGFic31cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YCR7dGFiQ29udGVudENsYXNzfSAke3RoaXMucHJvcHNcbiAgICAgICAgICAgICAgICAgICAgICAgIC5jb250ZW50X2NsYXNzTmFtZSB8fCAnJ31gfVxuICAgICAgICAgICAgICAgICAgICBzdHlsZT17dGhpcy5wcm9wcy5jb250ZW50X3N0eWxlfVxuICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAge3NlbGVjdGVkVGFiQ29udGVudCB8fCAnJ31cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgICAgIC50YWItcGFyZW50IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICAgICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIC50YWItY29udGFpbmVyIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICAgICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIC50YWItY29udGFpbmVyLS12ZXJ0IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIC50YWItY29udGVudC0tdmVydCB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgICAgICAgICAgICAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogJHt0aGlzLnByb3BzXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgLm1vYmlsZV9icmVha3BvaW50fXB4KSB7XG4gICAgICAgICAgICAgICAgICAgICAgICA6Z2xvYmFsKC50YWItY29udGFpbmVyLS12ZXJ0IC50YWIpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItcmlnaHQ6IG5vbmUgIWltcG9ydGFudDtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItYm90dG9tOiBub25lICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgICA6Z2xvYmFsKC50YWItY29udGFpbmVyLS12ZXJ0IC50YWI6bGFzdC1vZi10eXBlKSB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICR7dGhpcy5wcm9wcy5jb2xvcnMuYm9yZGVyfSAhaW1wb3J0YW50O1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAgICAgOmdsb2JhbCgudGFiLWNvbnRhaW5lci0tdmVydCAudGFiLS1zZWxlY3RlZCkge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci10b3A6IDFweCBzb2xpZCAke3RoaXMucHJvcHMuY29sb3JzLmJvcmRlcn07XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAke3RoaXMucHJvcHMuY29sb3JzLnByaW1hcnl9O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1yaWdodDogbm9uZTtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgICAgIC50YWItY29udGFpbmVyIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAgICAgLnRhYi1jb250YWluZXItLXZlcnQge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgICAudGFiLXBhcmVudC0tdmVydCB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICApO1xuICAgIH1cbn1cblxuVGFicy5kZWZhdWx0UHJvcHMgPSB7XG4gICAgbW9iaWxlX2JyZWFrcG9pbnQ6IDgwMCxcbiAgICBjb2xvcnM6IHtcbiAgICAgICAgYm9yZGVyOiAnI2Q2ZDZkNicsXG4gICAgICAgIHByaW1hcnk6ICcjMTk3NUZBJyxcbiAgICAgICAgYmFja2dyb3VuZDogJyNmOWY5ZjknLFxuICAgIH0sXG4gICAgdmVydGljYWw6IGZhbHNlLFxuICAgIHBlcnNpc3RlZF9wcm9wczogWyd2YWx1ZSddLFxuICAgIHBlcnNpc3RlbmNlX3R5cGU6ICdsb2NhbCcsXG59O1xuXG5UYWJzLnByb3BUeXBlcyA9IHtcbiAgICAvKipcbiAgICAgKiBUaGUgSUQgb2YgdGhpcyBjb21wb25lbnQsIHVzZWQgdG8gaWRlbnRpZnkgZGFzaCBjb21wb25lbnRzXG4gICAgICogaW4gY2FsbGJhY2tzLiBUaGUgSUQgbmVlZHMgdG8gYmUgdW5pcXVlIGFjcm9zcyBhbGwgb2YgdGhlXG4gICAgICogY29tcG9uZW50cyBpbiBhbiBhcHAuXG4gICAgICovXG4gICAgaWQ6IFByb3BUeXBlcy5zdHJpbmcsXG5cbiAgICAvKipcbiAgICAgKiBUaGUgdmFsdWUgb2YgdGhlIGN1cnJlbnRseSBzZWxlY3RlZCBUYWJcbiAgICAgKi9cbiAgICB2YWx1ZTogUHJvcFR5cGVzLnN0cmluZyxcblxuICAgIC8qKlxuICAgICAqIEFwcGVuZHMgYSBjbGFzcyB0byB0aGUgVGFicyBjb250YWluZXIgaG9sZGluZyB0aGUgaW5kaXZpZHVhbCBUYWIgY29tcG9uZW50cy5cbiAgICAgKi9cbiAgICBjbGFzc05hbWU6IFByb3BUeXBlcy5zdHJpbmcsXG5cbiAgICAvKipcbiAgICAgKiBBcHBlbmRzIGEgY2xhc3MgdG8gdGhlIFRhYiBjb250ZW50IGNvbnRhaW5lciBob2xkaW5nIHRoZSBjaGlsZHJlbiBvZiB0aGUgVGFiIHRoYXQgaXMgc2VsZWN0ZWQuXG4gICAgICovXG4gICAgY29udGVudF9jbGFzc05hbWU6IFByb3BUeXBlcy5zdHJpbmcsXG5cbiAgICAvKipcbiAgICAgKiBBcHBlbmRzIGEgY2xhc3MgdG8gdGhlIHRvcC1sZXZlbCBwYXJlbnQgY29udGFpbmVyIGhvbGRpbmcgYm90aCB0aGUgVGFicyBjb250YWluZXIgYW5kIHRoZSBjb250ZW50IGNvbnRhaW5lci5cbiAgICAgKi9cbiAgICBwYXJlbnRfY2xhc3NOYW1lOiBQcm9wVHlwZXMuc3RyaW5nLFxuXG4gICAgLyoqXG4gICAgICogQXBwZW5kcyAoaW5saW5lKSBzdHlsZXMgdG8gdGhlIFRhYnMgY29udGFpbmVyIGhvbGRpbmcgdGhlIGluZGl2aWR1YWwgVGFiIGNvbXBvbmVudHMuXG4gICAgICovXG4gICAgc3R5bGU6IFByb3BUeXBlcy5vYmplY3QsXG5cbiAgICAvKipcbiAgICAgKiBBcHBlbmRzIChpbmxpbmUpIHN0eWxlcyB0byB0aGUgdG9wLWxldmVsIHBhcmVudCBjb250YWluZXIgaG9sZGluZyBib3RoIHRoZSBUYWJzIGNvbnRhaW5lciBhbmQgdGhlIGNvbnRlbnQgY29udGFpbmVyLlxuICAgICAqL1xuICAgIHBhcmVudF9zdHlsZTogUHJvcFR5cGVzLm9iamVjdCxcblxuICAgIC8qKlxuICAgICAqIEFwcGVuZHMgKGlubGluZSkgc3R5bGVzIHRvIHRoZSB0YWIgY29udGVudCBjb250YWluZXIgaG9sZGluZyB0aGUgY2hpbGRyZW4gb2YgdGhlIFRhYiB0aGF0IGlzIHNlbGVjdGVkLlxuICAgICAqL1xuICAgIGNvbnRlbnRfc3R5bGU6IFByb3BUeXBlcy5vYmplY3QsXG5cbiAgICAvKipcbiAgICAgKiBSZW5kZXJzIHRoZSB0YWJzIHZlcnRpY2FsbHkgKG9uIHRoZSBzaWRlKVxuICAgICAqL1xuICAgIHZlcnRpY2FsOiBQcm9wVHlwZXMuYm9vbCxcblxuICAgIC8qKlxuICAgICAqIEJyZWFrcG9pbnQgYXQgd2hpY2ggdGFicyBhcmUgcmVuZGVyZWQgZnVsbCB3aWR0aCAoY2FuIGJlIDAgaWYgeW91IGRvbid0IHdhbnQgZnVsbCB3aWR0aCB0YWJzIG9uIG1vYmlsZSlcbiAgICAgKi9cbiAgICBtb2JpbGVfYnJlYWtwb2ludDogUHJvcFR5cGVzLm51bWJlcixcblxuICAgIC8qKlxuICAgICAqIEFycmF5IHRoYXQgaG9sZHMgVGFiIGNvbXBvbmVudHNcbiAgICAgKi9cbiAgICBjaGlsZHJlbjogUHJvcFR5cGVzLm9uZU9mVHlwZShbXG4gICAgICAgIFByb3BUeXBlcy5hcnJheU9mKFByb3BUeXBlcy5ub2RlKSxcbiAgICAgICAgUHJvcFR5cGVzLm5vZGUsXG4gICAgXSksXG5cbiAgICAvKipcbiAgICAgKiBIb2xkcyB0aGUgY29sb3JzIHVzZWQgYnkgdGhlIFRhYnMgYW5kIFRhYiBjb21wb25lbnRzLiBJZiB5b3Ugc2V0IHRoZXNlLCB5b3Ugc2hvdWxkIHNwZWNpZnkgY29sb3JzIGZvciBhbGwgcHJvcGVydGllcywgc286XG4gICAgICogY29sb3JzOiB7XG4gICAgICogICAgYm9yZGVyOiAnI2Q2ZDZkNicsXG4gICAgICogICAgcHJpbWFyeTogJyMxOTc1RkEnLFxuICAgICAqICAgIGJhY2tncm91bmQ6ICcjZjlmOWY5J1xuICAgICAqICB9XG4gICAgICovXG4gICAgY29sb3JzOiBQcm9wVHlwZXMuZXhhY3Qoe1xuICAgICAgICBib3JkZXI6IFByb3BUeXBlcy5zdHJpbmcsXG4gICAgICAgIHByaW1hcnk6IFByb3BUeXBlcy5zdHJpbmcsXG4gICAgICAgIGJhY2tncm91bmQ6IFByb3BUeXBlcy5zdHJpbmcsXG4gICAgfSksXG5cbiAgICAvKipcbiAgICAgKiBPYmplY3QgdGhhdCBob2xkcyB0aGUgbG9hZGluZyBzdGF0ZSBvYmplY3QgY29taW5nIGZyb20gZGFzaC1yZW5kZXJlclxuICAgICAqL1xuICAgIGxvYWRpbmdfc3RhdGU6IFByb3BUeXBlcy5zaGFwZSh7XG4gICAgICAgIC8qKlxuICAgICAgICAgKiBEZXRlcm1pbmVzIGlmIHRoZSBjb21wb25lbnQgaXMgbG9hZGluZyBvciBub3RcbiAgICAgICAgICovXG4gICAgICAgIGlzX2xvYWRpbmc6IFByb3BUeXBlcy5ib29sLFxuICAgICAgICAvKipcbiAgICAgICAgICogSG9sZHMgd2hpY2ggcHJvcGVydHkgaXMgbG9hZGluZ1xuICAgICAgICAgKi9cbiAgICAgICAgcHJvcF9uYW1lOiBQcm9wVHlwZXMuc3RyaW5nLFxuICAgICAgICAvKipcbiAgICAgICAgICogSG9sZHMgdGhlIG5hbWUgb2YgdGhlIGNvbXBvbmVudCB0aGF0IGlzIGxvYWRpbmdcbiAgICAgICAgICovXG4gICAgICAgIGNvbXBvbmVudF9uYW1lOiBQcm9wVHlwZXMuc3RyaW5nLFxuICAgIH0pLFxuXG4gICAgLyoqXG4gICAgICogVXNlZCB0byBhbGxvdyB1c2VyIGludGVyYWN0aW9ucyBpbiB0aGlzIGNvbXBvbmVudCB0byBiZSBwZXJzaXN0ZWQgd2hlblxuICAgICAqIHRoZSBjb21wb25lbnQgLSBvciB0aGUgcGFnZSAtIGlzIHJlZnJlc2hlZC4gSWYgYHBlcnNpc3RlZGAgaXMgdHJ1dGh5IGFuZFxuICAgICAqIGhhc24ndCBjaGFuZ2VkIGZyb20gaXRzIHByZXZpb3VzIHZhbHVlLCBhIGB2YWx1ZWAgdGhhdCB0aGUgdXNlciBoYXNcbiAgICAgKiBjaGFuZ2VkIHdoaWxlIHVzaW5nIHRoZSBhcHAgd2lsbCBrZWVwIHRoYXQgY2hhbmdlLCBhcyBsb25nIGFzXG4gICAgICogdGhlIG5ldyBgdmFsdWVgIGFsc28gbWF0Y2hlcyB3aGF0IHdhcyBnaXZlbiBvcmlnaW5hbGx5LlxuICAgICAqIFVzZWQgaW4gY29uanVuY3Rpb24gd2l0aCBgcGVyc2lzdGVuY2VfdHlwZWAuXG4gICAgICovXG4gICAgcGVyc2lzdGVuY2U6IFByb3BUeXBlcy5vbmVPZlR5cGUoW1xuICAgICAgICBQcm9wVHlwZXMuYm9vbCxcbiAgICAgICAgUHJvcFR5cGVzLnN0cmluZyxcbiAgICAgICAgUHJvcFR5cGVzLm51bWJlcixcbiAgICBdKSxcblxuICAgIC8qKlxuICAgICAqIFByb3BlcnRpZXMgd2hvc2UgdXNlciBpbnRlcmFjdGlvbnMgd2lsbCBwZXJzaXN0IGFmdGVyIHJlZnJlc2hpbmcgdGhlXG4gICAgICogY29tcG9uZW50IG9yIHRoZSBwYWdlLiBTaW5jZSBvbmx5IGB2YWx1ZWAgaXMgYWxsb3dlZCB0aGlzIHByb3AgY2FuXG4gICAgICogbm9ybWFsbHkgYmUgaWdub3JlZC5cbiAgICAgKi9cbiAgICBwZXJzaXN0ZWRfcHJvcHM6IFByb3BUeXBlcy5hcnJheU9mKFByb3BUeXBlcy5vbmVPZihbJ3ZhbHVlJ10pKSxcblxuICAgIC8qKlxuICAgICAqIFdoZXJlIHBlcnNpc3RlZCB1c2VyIGNoYW5nZXMgd2lsbCBiZSBzdG9yZWQ6XG4gICAgICogbWVtb3J5OiBvbmx5IGtlcHQgaW4gbWVtb3J5LCByZXNldCBvbiBwYWdlIHJlZnJlc2guXG4gICAgICogbG9jYWw6IHdpbmRvdy5sb2NhbFN0b3JhZ2UsIGRhdGEgaXMga2VwdCBhZnRlciB0aGUgYnJvd3NlciBxdWl0LlxuICAgICAqIHNlc3Npb246IHdpbmRvdy5zZXNzaW9uU3RvcmFnZSwgZGF0YSBpcyBjbGVhcmVkIG9uY2UgdGhlIGJyb3dzZXIgcXVpdC5cbiAgICAgKi9cbiAgICBwZXJzaXN0ZW5jZV90eXBlOiBQcm9wVHlwZXMub25lT2YoWydsb2NhbCcsICdzZXNzaW9uJywgJ21lbW9yeSddKSxcbn07XG4iXX0= */
+/*@ sourceURL=/Users/marc-andrerivet/projects/release/DashCore/dash-core-components/src/components/Tabs.react.js */</style><script charset="utf-8" src="./Dashboard-DataFrance_files/async-table.v4_8_1m1592577109.js.téléchargement"></script><style type="text/css" data-styled-jsx="">.tab-parent.jsx-4017309047{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.tab-container.jsx-4017309047{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.tab-container--vert.jsx-4017309047{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}.tab-content--vert.jsx-4017309047{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media screen and (min-width:800px){.tab-container--vert .tab{width:auto;border-right:none !important;border-bottom:none !important;}.tab-container--vert .tab:last-of-type{border-bottom:1px solid #d6d6d6 !important;}.tab-container--vert .tab--selected{border-top:1px solid #d6d6d6;border-left:2px solid #1975FA;border-right:none;}.tab-container.jsx-4017309047{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}.tab-container--vert.jsx-4017309047{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.tab-parent--vert.jsx-4017309047{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJjLWFuZHJlcml2ZXQvcHJvamVjdHMvcmVsZWFzZS9EYXNoQ29yZS9kYXNoLWNvcmUtY29tcG9uZW50cy9zcmMvY29tcG9uZW50cy9UYWJzLnJlYWN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdSNEIsQUFHc0MsQUFJQSxBQUlPLEFBR0EsQUFLTCxBQUtxRCxBQUdkLEFBSy9CLEFBR0csQUFHRixXQWxCUyw2QkFDQyxVQU9xQixjQUh2RCxLQVFBLENBWEEsSUFsQnNCLEFBSUEsSUE0QnRCLHVCQVBzQixDQWpCMUIsQUFHMEIsQUF3QkMsaUJBVHZCLGlDQXpCSixBQUlBLG1CQStCSSxTQXhCSiIsImZpbGUiOiIvVXNlcnMvbWFyYy1hbmRyZXJpdmV0L3Byb2plY3RzL3JlbGVhc2UvRGFzaENvcmUvZGFzaC1jb3JlLWNvbXBvbmVudHMvc3JjL2NvbXBvbmVudHMvVGFicy5yZWFjdC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGVzbGludC1kaXNhYmxlIHJlYWN0L3Byb3AtdHlwZXMgKi9cbmltcG9ydCBSZWFjdCwge0NvbXBvbmVudH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcbmltcG9ydCB7aGFzLCBpcywgaXNOaWx9IGZyb20gJ3JhbWRhJztcblxuLy8gRW5oYW5jZWRUYWIgaXMgZGVmaW5lZCBoZXJlIGluc3RlYWQgb2YgaW4gVGFiLnJlYWN0LmpzIGJlY2F1c2UgaWYgZXhwb3J0ZWQgdGhlcmUsXG4vLyBpdCB3aWxsIG1lc3MgdXAgdGhlIFB5dGhvbiBpbXBvcnRzIGFuZCBtZXRhZGF0YS5qc29uXG5jb25zdCBFbmhhbmNlZFRhYiA9ICh7XG4gICAgaWQsXG4gICAgbGFiZWwsXG4gICAgc2VsZWN0ZWQsXG4gICAgY2xhc3NOYW1lLFxuICAgIHN0eWxlLFxuICAgIHNlbGVjdGVkQ2xhc3NOYW1lLFxuICAgIHNlbGVjdGVkX3N0eWxlLFxuICAgIHNlbGVjdEhhbmRsZXIsXG4gICAgdmFsdWUsXG4gICAgZGlzYWJsZWQsXG4gICAgZGlzYWJsZWRfc3R5bGUsXG4gICAgZGlzYWJsZWRfY2xhc3NOYW1lLFxuICAgIG1vYmlsZV9icmVha3BvaW50LFxuICAgIGFtb3VudE9mVGFicyxcbiAgICBjb2xvcnMsXG4gICAgdmVydGljYWwsXG4gICAgbG9hZGluZ19zdGF0ZSxcbn0pID0+IHtcbiAgICBsZXQgdGFiU3R5bGUgPSBzdHlsZTtcbiAgICBpZiAoZGlzYWJsZWQpIHtcbiAgICAgICAgdGFiU3R5bGUgPSB7dGFiU3R5bGUsIC4uLmRpc2FibGVkX3N0eWxlfTtcbiAgICB9XG4gICAgaWYgKHNlbGVjdGVkKSB7XG4gICAgICAgIHRhYlN0eWxlID0ge3RhYlN0eWxlLCAuLi5zZWxlY3RlZF9zdHlsZX07XG4gICAgfVxuICAgIGxldCB0YWJDbGFzc05hbWUgPSBgdGFiICR7Y2xhc3NOYW1lIHx8ICcnfWA7XG4gICAgaWYgKGRpc2FibGVkKSB7XG4gICAgICAgIHRhYkNsYXNzTmFtZSArPSBgIHRhYi0tZGlzYWJsZWQgJHtkaXNhYmxlZF9jbGFzc05hbWUgfHwgJyd9YDtcbiAgICB9XG4gICAgaWYgKHNlbGVjdGVkKSB7XG4gICAgICAgIHRhYkNsYXNzTmFtZSArPSBgIHRhYi0tc2VsZWN0ZWQgJHtzZWxlY3RlZENsYXNzTmFtZSB8fCAnJ31gO1xuICAgIH1cbiAgICBsZXQgbGFiZWxEaXNwbGF5O1xuICAgIGlmIChpcyhBcnJheSwgbGFiZWwpKSB7XG4gICAgICAgIC8vIGxhYmVsIGlzIGFuIGFycmF5LCBzbyBpdCBoYXMgY2hpbGRyZW4gdGhhdCB3ZSB3YW50IHRvIHJlbmRlclxuICAgICAgICBsYWJlbERpc3BsYXkgPSBsYWJlbFswXS5wcm9wcy5jaGlsZHJlbjtcbiAgICB9IGVsc2Uge1xuICAgICAgICAvLyBlbHNlIGl0IGlzIGEgc3RyaW5nLCBzbyB3ZSBqdXN0IHdhbnQgdG8gcmVuZGVyIHRoYXRcbiAgICAgICAgbGFiZWxEaXNwbGF5ID0gbGFiZWw7XG4gICAgfVxuICAgIHJldHVybiAoXG4gICAgICAgIDxkaXZcbiAgICAgICAgICAgIGRhdGEtZGFzaC1pcy1sb2FkaW5nPXtcbiAgICAgICAgICAgICAgICAobG9hZGluZ19zdGF0ZSAmJiBsb2FkaW5nX3N0YXRlLmlzX2xvYWRpbmcpIHx8IHVuZGVmaW5lZFxuICAgICAgICAgICAgfVxuICAgICAgICAgICAgY2xhc3NOYW1lPXt0YWJDbGFzc05hbWV9XG4gICAgICAgICAgICBpZD17aWR9XG4gICAgICAgICAgICBzdHlsZT17dGFiU3R5bGV9XG4gICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgaWYgKCFkaXNhYmxlZCkge1xuICAgICAgICAgICAgICAgICAgICBzZWxlY3RIYW5kbGVyKHZhbHVlKTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgICA8c3Bhbj57bGFiZWxEaXNwbGF5fTwvc3Bhbj5cbiAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgICAgICAudGFiIHtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAke2NvbG9ycy5iYWNrZ3JvdW5kfTtcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgJHtjb2xvcnMuYm9yZGVyfTtcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZzogMjBweCAyNXB4O1xuICAgICAgICAgICAgICAgICAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yLCBjb2xvciAyMDBtcztcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgICAgICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgLnRhYjpsYXN0LW9mLXR5cGUge1xuICAgICAgICAgICAgICAgICAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAke2NvbG9ycy5ib3JkZXJ9O1xuICAgICAgICAgICAgICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgJHtjb2xvcnMuYm9yZGVyfTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgLnRhYjpob3ZlciB7XG4gICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgLnRhYi0tc2VsZWN0ZWQge1xuICAgICAgICAgICAgICAgICAgICBib3JkZXItdG9wOiAycHggc29saWQgJHtjb2xvcnMucHJpbWFyeX07XG4gICAgICAgICAgICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIC50YWItLXNlbGVjdGVkOmhvdmVyIHtcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIC50YWItLWRpc2FibGVkIHtcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6ICNkNmQ2ZDY7XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogJHttb2JpbGVfYnJlYWtwb2ludH1weCkge1xuICAgICAgICAgICAgICAgICAgICAudGFiIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICR7Y29sb3JzLmJvcmRlcn07XG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItcmlnaHQ6IG5vbmU7XG4gICAgICAgICAgICAgICAgICAgICAgICAke3ZlcnRpY2FsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPyAnJ1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogYHdpZHRoOiBjYWxjKDEwMCUgLyAke2Ftb3VudE9mVGFic30pO2B9O1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIC50YWItLXNlbGVjdGVkLFxuICAgICAgICAgICAgICAgICAgICAudGFiOmxhc3Qtb2YtdHlwZS50YWItLXNlbGVjdGVkIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1ib3R0b206IG5vbmU7XG4gICAgICAgICAgICAgICAgICAgICAgICAke3ZlcnRpY2FsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPyBgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAke2NvbG9ycy5wcmltYXJ5fTtgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBgYm9yZGVyLXRvcDogMnB4IHNvbGlkICR7Y29sb3JzLnByaW1hcnl9O2B9O1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICApO1xufTtcblxuRW5oYW5jZWRUYWIuZGVmYXVsdFByb3BzID0ge1xuICAgIGxvYWRpbmdfc3RhdGU6IHtcbiAgICAgICAgaXNfbG9hZGluZzogZmFsc2UsXG4gICAgICAgIGNvbXBvbmVudF9uYW1lOiAnJyxcbiAgICAgICAgcHJvcF9uYW1lOiAnJyxcbiAgICB9LFxufTtcblxuLyoqXG4gKiBBIERhc2ggY29tcG9uZW50IHRoYXQgbGV0cyB5b3UgcmVuZGVyIHBhZ2VzIHdpdGggdGFicyAtIHRoZSBUYWJzIGNvbXBvbmVudCdzIGNoaWxkcmVuXG4gKiBjYW4gYmUgZGNjLlRhYiBjb21wb25lbnRzLCB3aGljaCBjYW4gaG9sZCBhIGxhYmVsIHRoYXQgd2lsbCBiZSBkaXNwbGF5ZWQgYXMgYSB0YWIsIGFuZCBjYW4gaW4gdHVybiBob2xkXG4gKiBjaGlsZHJlbiBjb21wb25lbnRzIHRoYXQgd2lsbCBiZSB0aGF0IHRhYidzIGNvbnRlbnQuXG4gKi9cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIFRhYnMgZXh0ZW5kcyBDb21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgICAgIHN1cGVyKHByb3BzKTtcblxuICAgICAgICB0aGlzLnNlbGVjdEhhbmRsZXIgPSB0aGlzLnNlbGVjdEhhbmRsZXIuYmluZCh0aGlzKTtcbiAgICAgICAgdGhpcy5wYXJzZUNoaWxkcmVuVG9BcnJheSA9IHRoaXMucGFyc2VDaGlsZHJlblRvQXJyYXkuYmluZCh0aGlzKTtcbiAgICAgICAgdGhpcy52YWx1ZU9yRGVmYXVsdCA9IHRoaXMudmFsdWVPckRlZmF1bHQuYmluZCh0aGlzKTtcblxuICAgICAgICBpZiAoIWhhcygndmFsdWUnLCB0aGlzLnByb3BzKSkge1xuICAgICAgICAgICAgdGhpcy5wcm9wcy5zZXRQcm9wcyh7XG4gICAgICAgICAgICAgICAgdmFsdWU6IHRoaXMudmFsdWVPckRlZmF1bHQoKSxcbiAgICAgICAgICAgIH0pO1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgdmFsdWVPckRlZmF1bHQoKSB7XG4gICAgICAgIGlmIChoYXMoJ3ZhbHVlJywgdGhpcy5wcm9wcykpIHtcbiAgICAgICAgICAgIHJldHVybiB0aGlzLnByb3BzLnZhbHVlO1xuICAgICAgICB9XG4gICAgICAgIGNvbnN0IGNoaWxkcmVuID0gdGhpcy5wYXJzZUNoaWxkcmVuVG9BcnJheSgpO1xuICAgICAgICBpZiAoY2hpbGRyZW4gJiYgY2hpbGRyZW5bMF0ucHJvcHMuY2hpbGRyZW4pIHtcbiAgICAgICAgICAgIHJldHVybiBjaGlsZHJlblswXS5wcm9wcy5jaGlsZHJlbi5wcm9wcy52YWx1ZSB8fCAndGFiLTEnO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiAndGFiLTEnO1xuICAgIH1cblxuICAgIHBhcnNlQ2hpbGRyZW5Ub0FycmF5KCkge1xuICAgICAgICBpZiAodGhpcy5wcm9wcy5jaGlsZHJlbiAmJiAhaXMoQXJyYXksIHRoaXMucHJvcHMuY2hpbGRyZW4pKSB7XG4gICAgICAgICAgICAvLyBpZiBkY2MuVGFicy5jaGlsZHJlbiBjb250YWlucyBqdXN0IG9uZSBzaW5nbGUgZWxlbWVudCwgaXQgZ2V0cyBwYXNzZWQgYXMgYW4gb2JqZWN0XG4gICAgICAgICAgICAvLyBpbnN0ZWFkIG9mIGFuIGFycmF5IC0gc28gd2UgcHV0IGluIGluIGEgYXJyYXkgb3Vyc2VsdmVzIVxuICAgICAgICAgICAgcmV0dXJuIFt0aGlzLnByb3BzLmNoaWxkcmVuXTtcbiAgICAgICAgfVxuICAgICAgICByZXR1cm4gdGhpcy5wcm9wcy5jaGlsZHJlbjtcbiAgICB9XG5cbiAgICBzZWxlY3RIYW5kbGVyKHZhbHVlKSB7XG4gICAgICAgIHRoaXMucHJvcHMuc2V0UHJvcHMoe3ZhbHVlOiB2YWx1ZX0pO1xuICAgIH1cblxuICAgIHJlbmRlcigpIHtcbiAgICAgICAgbGV0IEVuaGFuY2VkVGFicztcbiAgICAgICAgbGV0IHNlbGVjdGVkVGFiO1xuXG4gICAgICAgIGlmICh0aGlzLnByb3BzLmNoaWxkcmVuKSB7XG4gICAgICAgICAgICBjb25zdCBjaGlsZHJlbiA9IHRoaXMucGFyc2VDaGlsZHJlblRvQXJyYXkoKTtcblxuICAgICAgICAgICAgY29uc3QgYW1vdW50T2ZUYWJzID0gY2hpbGRyZW4ubGVuZ3RoO1xuXG4gICAgICAgICAgICBFbmhhbmNlZFRhYnMgPSBjaGlsZHJlbi5tYXAoKGNoaWxkLCBpbmRleCkgPT4ge1xuICAgICAgICAgICAgICAgIC8vIFRPRE86IGhhbmRsZSBjb21wb25lbnRzIHRoYXQgYXJlIG5vdCBkY2MuVGFiIGNvbXBvbmVudHMgKHRocm93IGVycm9yKVxuICAgICAgICAgICAgICAgIC8vIGVuaGFuY2UgVGFiIGNvbXBvbmVudHMgY29taW5nIGZyb20gRGFzaCAoYXMgZGNjLlRhYikgd2l0aCBtZXRob2RzIG5lZWRlZCBmb3IgaGFuZGxpbmcgbG9naWNcbiAgICAgICAgICAgICAgICBsZXQgY2hpbGRQcm9wcztcblxuICAgICAgICAgICAgICAgIGlmIChcbiAgICAgICAgICAgICAgICAgICAgLy8gZGlzYWJsZWQgaXMgYSBkZWZhdWx0UHJvcCAoc28gaXQncyBhbHdheXMgc2V0KVxuICAgICAgICAgICAgICAgICAgICAvLyBtZWFuaW5nIHRoYXQgaWYgaXQncyBub3Qgc2V0IG9uIGNoaWxkLnByb3BzLCB0aGUgYWN0dWFsXG4gICAgICAgICAgICAgICAgICAgIC8vIHByb3BzIHdlIHdhbnQgYXJlIGx5aW5nIGEgYml0IGRlZXBlciAtIHdoaWNoIG1lYW5zIHRoZXlcbiAgICAgICAgICAgICAgICAgICAgLy8gYXJlIGNvbWluZyBmcm9tIERhc2hcbiAgICAgICAgICAgICAgICAgICAgaXNOaWwoY2hpbGQucHJvcHMuZGlzYWJsZWQpICYmXG4gICAgICAgICAgICAgICAgICAgIGNoaWxkLnByb3BzLl9kYXNocHJpdmF0ZV9sYXlvdXQgJiZcbiAgICAgICAgICAgICAgICAgICAgY2hpbGQucHJvcHMuX2Rhc2hwcml2YXRlX2xheW91dC5wcm9wc1xuICAgICAgICAgICAgICAgICkge1xuICAgICAgICAgICAgICAgICAgICAvLyBwcm9wcyBhcmUgY29taW5nIGZyb20gRGFzaFxuICAgICAgICAgICAgICAgICAgICBjaGlsZFByb3BzID0gY2hpbGQucHJvcHMuX2Rhc2hwcml2YXRlX2xheW91dC5wcm9wcztcbiAgICAgICAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgICAgICAgICAvLyBlbHNlIHByb3BzIGFyZSBjb21pbmcgZnJvbSBSZWFjdCAoRGVtby5yZWFjdC5qcywgb3IgVGFicy50ZXN0LmpzKVxuICAgICAgICAgICAgICAgICAgICBjaGlsZFByb3BzID0gY2hpbGQucHJvcHM7XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgaWYgKCFjaGlsZFByb3BzLnZhbHVlKSB7XG4gICAgICAgICAgICAgICAgICAgIGNoaWxkUHJvcHMgPSB7Li4uY2hpbGRQcm9wcywgdmFsdWU6IGB0YWItJHtpbmRleCArIDF9YH07XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgLy8gY2hlY2sgaWYgdGhpcyBjaGlsZC9UYWIgaXMgY3VycmVudGx5IHNlbGVjdGVkXG4gICAgICAgICAgICAgICAgaWYgKGNoaWxkUHJvcHMudmFsdWUgPT09IHRoaXMudmFsdWVPckRlZmF1bHQoKSkge1xuICAgICAgICAgICAgICAgICAgICBzZWxlY3RlZFRhYiA9IGNoaWxkO1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgICAgICAgIDxFbmhhbmNlZFRhYlxuICAgICAgICAgICAgICAgICAgICAgICAga2V5PXtpbmRleH1cbiAgICAgICAgICAgICAgICAgICAgICAgIGlkPXtjaGlsZFByb3BzLmlkfVxuICAgICAgICAgICAgICAgICAgICAgICAgbGFiZWw9e2NoaWxkUHJvcHMubGFiZWx9XG4gICAgICAgICAgICAgICAgICAgICAgICBzZWxlY3RlZD17dGhpcy52YWx1ZU9yRGVmYXVsdCgpID09PSBjaGlsZFByb3BzLnZhbHVlfVxuICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0SGFuZGxlcj17dGhpcy5zZWxlY3RIYW5kbGVyfVxuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtjaGlsZFByb3BzLmNsYXNzTmFtZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXtjaGlsZFByb3BzLnN0eWxlfVxuICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRDbGFzc05hbWU9e2NoaWxkUHJvcHMuc2VsZWN0ZWRfY2xhc3NOYW1lfVxuICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRfc3R5bGU9e2NoaWxkUHJvcHMuc2VsZWN0ZWRfc3R5bGV9XG4gICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT17Y2hpbGRQcm9wcy52YWx1ZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc2FibGVkPXtjaGlsZFByb3BzLmRpc2FibGVkfVxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzYWJsZWRfc3R5bGU9e2NoaWxkUHJvcHMuZGlzYWJsZWRfc3R5bGV9XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNhYmxlZF9jbGFzc25hbWU9e2NoaWxkUHJvcHMuZGlzYWJsZWRfY2xhc3NOYW1lfVxuICAgICAgICAgICAgICAgICAgICAgICAgbW9iaWxlX2JyZWFrcG9pbnQ9e3RoaXMucHJvcHMubW9iaWxlX2JyZWFrcG9pbnR9XG4gICAgICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbD17dGhpcy5wcm9wcy52ZXJ0aWNhbH1cbiAgICAgICAgICAgICAgICAgICAgICAgIGFtb3VudE9mVGFicz17YW1vdW50T2ZUYWJzfVxuICAgICAgICAgICAgICAgICAgICAgICAgY29sb3JzPXt0aGlzLnByb3BzLmNvbG9yc31cbiAgICAgICAgICAgICAgICAgICAgICAgIGxvYWRpbmdfc3RhdGU9e2NoaWxkUHJvcHMubG9hZGluZ19zdGF0ZX1cbiAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgfSk7XG4gICAgICAgIH1cblxuICAgICAgICBjb25zdCBzZWxlY3RlZFRhYkNvbnRlbnQgPSAhaXNOaWwoc2VsZWN0ZWRUYWIpID8gc2VsZWN0ZWRUYWIgOiAnJztcblxuICAgICAgICBjb25zdCB0YWJDb250YWluZXJDbGFzcyA9IHRoaXMucHJvcHMudmVydGljYWxcbiAgICAgICAgICAgID8gJ3RhYi1jb250YWluZXIgdGFiLWNvbnRhaW5lci0tdmVydCdcbiAgICAgICAgICAgIDogJ3RhYi1jb250YWluZXInO1xuXG4gICAgICAgIGNvbnN0IHRhYkNvbnRlbnRDbGFzcyA9IHRoaXMucHJvcHMudmVydGljYWxcbiAgICAgICAgICAgID8gJ3RhYi1jb250ZW50IHRhYi1jb250ZW50LS12ZXJ0J1xuICAgICAgICAgICAgOiAndGFiLWNvbnRlbnQnO1xuXG4gICAgICAgIGNvbnN0IHRhYlBhcmVudENsYXNzID0gdGhpcy5wcm9wcy52ZXJ0aWNhbFxuICAgICAgICAgICAgPyAndGFiLXBhcmVudCB0YWItcGFyZW50LS12ZXJ0J1xuICAgICAgICAgICAgOiAndGFiLXBhcmVudCc7XG5cbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgICBkYXRhLWRhc2gtaXMtbG9hZGluZz17XG4gICAgICAgICAgICAgICAgICAgICh0aGlzLnByb3BzLmxvYWRpbmdfc3RhdGUgJiZcbiAgICAgICAgICAgICAgICAgICAgICAgIHRoaXMucHJvcHMubG9hZGluZ19zdGF0ZS5pc19sb2FkaW5nKSB8fFxuICAgICAgICAgICAgICAgICAgICB1bmRlZmluZWRcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgJHt0YWJQYXJlbnRDbGFzc30gJHt0aGlzLnByb3BzLnBhcmVudF9jbGFzc05hbWUgfHxcbiAgICAgICAgICAgICAgICAgICAgJyd9YH1cbiAgICAgICAgICAgICAgICBzdHlsZT17dGhpcy5wcm9wcy5wYXJlbnRfc3R5bGV9XG4gICAgICAgICAgICAgICAgaWQ9e2Ake3RoaXMucHJvcHMuaWR9LXBhcmVudGB9XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgPGRpdlxuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2Ake3RhYkNvbnRhaW5lckNsYXNzfSAke3RoaXMucHJvcHMuY2xhc3NOYW1lIHx8XG4gICAgICAgICAgICAgICAgICAgICAgICAnJ31gfVxuICAgICAgICAgICAgICAgICAgICBzdHlsZT17dGhpcy5wcm9wcy5zdHlsZX1cbiAgICAgICAgICAgICAgICAgICAgaWQ9e3RoaXMucHJvcHMuaWR9XG4gICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICB7RW5oYW5jZWRUYWJzfVxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgJHt0YWJDb250ZW50Q2xhc3N9ICR7dGhpcy5wcm9wc1xuICAgICAgICAgICAgICAgICAgICAgICAgLmNvbnRlbnRfY2xhc3NOYW1lIHx8ICcnfWB9XG4gICAgICAgICAgICAgICAgICAgIHN0eWxlPXt0aGlzLnByb3BzLmNvbnRlbnRfc3R5bGV9XG4gICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICB7c2VsZWN0ZWRUYWJDb250ZW50IHx8ICcnfVxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgICAgICAgICAgLnRhYi1wYXJlbnQge1xuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgICAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgLnRhYi1jb250YWluZXIge1xuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgICAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgLnRhYi1jb250YWluZXItLXZlcnQge1xuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgLnRhYi1jb250ZW50LS12ZXJ0IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICAgICAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAke3RoaXMucHJvcHNcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAubW9iaWxlX2JyZWFrcG9pbnR9cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIDpnbG9iYWwoLnRhYi1jb250YWluZXItLXZlcnQgLnRhYikge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1yaWdodDogbm9uZSAhaW1wb3J0YW50O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1ib3R0b206IG5vbmUgIWltcG9ydGFudDtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgICAgIDpnbG9iYWwoLnRhYi1jb250YWluZXItLXZlcnQgLnRhYjpsYXN0LW9mLXR5cGUpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgJHt0aGlzLnByb3BzLmNvbG9ycy5ib3JkZXJ9ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgICA6Z2xvYmFsKC50YWItY29udGFpbmVyLS12ZXJ0IC50YWItLXNlbGVjdGVkKSB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICR7dGhpcy5wcm9wcy5jb2xvcnMuYm9yZGVyfTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItbGVmdDogMnB4IHNvbGlkICR7dGhpcy5wcm9wcy5jb2xvcnMucHJpbWFyeX07XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAgICAgLnRhYi1jb250YWluZXIge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgICAudGFiLWNvbnRhaW5lci0tdmVydCB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgICAgIC50YWItcGFyZW50LS12ZXJ0IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICk7XG4gICAgfVxufVxuXG5UYWJzLmRlZmF1bHRQcm9wcyA9IHtcbiAgICBtb2JpbGVfYnJlYWtwb2ludDogODAwLFxuICAgIGNvbG9yczoge1xuICAgICAgICBib3JkZXI6ICcjZDZkNmQ2JyxcbiAgICAgICAgcHJpbWFyeTogJyMxOTc1RkEnLFxuICAgICAgICBiYWNrZ3JvdW5kOiAnI2Y5ZjlmOScsXG4gICAgfSxcbiAgICB2ZXJ0aWNhbDogZmFsc2UsXG4gICAgcGVyc2lzdGVkX3Byb3BzOiBbJ3ZhbHVlJ10sXG4gICAgcGVyc2lzdGVuY2VfdHlwZTogJ2xvY2FsJyxcbn07XG5cblRhYnMucHJvcFR5cGVzID0ge1xuICAgIC8qKlxuICAgICAqIFRoZSBJRCBvZiB0aGlzIGNvbXBvbmVudCwgdXNlZCB0byBpZGVudGlmeSBkYXNoIGNvbXBvbmVudHNcbiAgICAgKiBpbiBjYWxsYmFja3MuIFRoZSBJRCBuZWVkcyB0byBiZSB1bmlxdWUgYWNyb3NzIGFsbCBvZiB0aGVcbiAgICAgKiBjb21wb25lbnRzIGluIGFuIGFwcC5cbiAgICAgKi9cbiAgICBpZDogUHJvcFR5cGVzLnN0cmluZyxcblxuICAgIC8qKlxuICAgICAqIFRoZSB2YWx1ZSBvZiB0aGUgY3VycmVudGx5IHNlbGVjdGVkIFRhYlxuICAgICAqL1xuICAgIHZhbHVlOiBQcm9wVHlwZXMuc3RyaW5nLFxuXG4gICAgLyoqXG4gICAgICogQXBwZW5kcyBhIGNsYXNzIHRvIHRoZSBUYWJzIGNvbnRhaW5lciBob2xkaW5nIHRoZSBpbmRpdmlkdWFsIFRhYiBjb21wb25lbnRzLlxuICAgICAqL1xuICAgIGNsYXNzTmFtZTogUHJvcFR5cGVzLnN0cmluZyxcblxuICAgIC8qKlxuICAgICAqIEFwcGVuZHMgYSBjbGFzcyB0byB0aGUgVGFiIGNvbnRlbnQgY29udGFpbmVyIGhvbGRpbmcgdGhlIGNoaWxkcmVuIG9mIHRoZSBUYWIgdGhhdCBpcyBzZWxlY3RlZC5cbiAgICAgKi9cbiAgICBjb250ZW50X2NsYXNzTmFtZTogUHJvcFR5cGVzLnN0cmluZyxcblxuICAgIC8qKlxuICAgICAqIEFwcGVuZHMgYSBjbGFzcyB0byB0aGUgdG9wLWxldmVsIHBhcmVudCBjb250YWluZXIgaG9sZGluZyBib3RoIHRoZSBUYWJzIGNvbnRhaW5lciBhbmQgdGhlIGNvbnRlbnQgY29udGFpbmVyLlxuICAgICAqL1xuICAgIHBhcmVudF9jbGFzc05hbWU6IFByb3BUeXBlcy5zdHJpbmcsXG5cbiAgICAvKipcbiAgICAgKiBBcHBlbmRzIChpbmxpbmUpIHN0eWxlcyB0byB0aGUgVGFicyBjb250YWluZXIgaG9sZGluZyB0aGUgaW5kaXZpZHVhbCBUYWIgY29tcG9uZW50cy5cbiAgICAgKi9cbiAgICBzdHlsZTogUHJvcFR5cGVzLm9iamVjdCxcblxuICAgIC8qKlxuICAgICAqIEFwcGVuZHMgKGlubGluZSkgc3R5bGVzIHRvIHRoZSB0b3AtbGV2ZWwgcGFyZW50IGNvbnRhaW5lciBob2xkaW5nIGJvdGggdGhlIFRhYnMgY29udGFpbmVyIGFuZCB0aGUgY29udGVudCBjb250YWluZXIuXG4gICAgICovXG4gICAgcGFyZW50X3N0eWxlOiBQcm9wVHlwZXMub2JqZWN0LFxuXG4gICAgLyoqXG4gICAgICogQXBwZW5kcyAoaW5saW5lKSBzdHlsZXMgdG8gdGhlIHRhYiBjb250ZW50IGNvbnRhaW5lciBob2xkaW5nIHRoZSBjaGlsZHJlbiBvZiB0aGUgVGFiIHRoYXQgaXMgc2VsZWN0ZWQuXG4gICAgICovXG4gICAgY29udGVudF9zdHlsZTogUHJvcFR5cGVzLm9iamVjdCxcblxuICAgIC8qKlxuICAgICAqIFJlbmRlcnMgdGhlIHRhYnMgdmVydGljYWxseSAob24gdGhlIHNpZGUpXG4gICAgICovXG4gICAgdmVydGljYWw6IFByb3BUeXBlcy5ib29sLFxuXG4gICAgLyoqXG4gICAgICogQnJlYWtwb2ludCBhdCB3aGljaCB0YWJzIGFyZSByZW5kZXJlZCBmdWxsIHdpZHRoIChjYW4gYmUgMCBpZiB5b3UgZG9uJ3Qgd2FudCBmdWxsIHdpZHRoIHRhYnMgb24gbW9iaWxlKVxuICAgICAqL1xuICAgIG1vYmlsZV9icmVha3BvaW50OiBQcm9wVHlwZXMubnVtYmVyLFxuXG4gICAgLyoqXG4gICAgICogQXJyYXkgdGhhdCBob2xkcyBUYWIgY29tcG9uZW50c1xuICAgICAqL1xuICAgIGNoaWxkcmVuOiBQcm9wVHlwZXMub25lT2ZUeXBlKFtcbiAgICAgICAgUHJvcFR5cGVzLmFycmF5T2YoUHJvcFR5cGVzLm5vZGUpLFxuICAgICAgICBQcm9wVHlwZXMubm9kZSxcbiAgICBdKSxcblxuICAgIC8qKlxuICAgICAqIEhvbGRzIHRoZSBjb2xvcnMgdXNlZCBieSB0aGUgVGFicyBhbmQgVGFiIGNvbXBvbmVudHMuIElmIHlvdSBzZXQgdGhlc2UsIHlvdSBzaG91bGQgc3BlY2lmeSBjb2xvcnMgZm9yIGFsbCBwcm9wZXJ0aWVzLCBzbzpcbiAgICAgKiBjb2xvcnM6IHtcbiAgICAgKiAgICBib3JkZXI6ICcjZDZkNmQ2JyxcbiAgICAgKiAgICBwcmltYXJ5OiAnIzE5NzVGQScsXG4gICAgICogICAgYmFja2dyb3VuZDogJyNmOWY5ZjknXG4gICAgICogIH1cbiAgICAgKi9cbiAgICBjb2xvcnM6IFByb3BUeXBlcy5leGFjdCh7XG4gICAgICAgIGJvcmRlcjogUHJvcFR5cGVzLnN0cmluZyxcbiAgICAgICAgcHJpbWFyeTogUHJvcFR5cGVzLnN0cmluZyxcbiAgICAgICAgYmFja2dyb3VuZDogUHJvcFR5cGVzLnN0cmluZyxcbiAgICB9KSxcblxuICAgIC8qKlxuICAgICAqIE9iamVjdCB0aGF0IGhvbGRzIHRoZSBsb2FkaW5nIHN0YXRlIG9iamVjdCBjb21pbmcgZnJvbSBkYXNoLXJlbmRlcmVyXG4gICAgICovXG4gICAgbG9hZGluZ19zdGF0ZTogUHJvcFR5cGVzLnNoYXBlKHtcbiAgICAgICAgLyoqXG4gICAgICAgICAqIERldGVybWluZXMgaWYgdGhlIGNvbXBvbmVudCBpcyBsb2FkaW5nIG9yIG5vdFxuICAgICAgICAgKi9cbiAgICAgICAgaXNfbG9hZGluZzogUHJvcFR5cGVzLmJvb2wsXG4gICAgICAgIC8qKlxuICAgICAgICAgKiBIb2xkcyB3aGljaCBwcm9wZXJ0eSBpcyBsb2FkaW5nXG4gICAgICAgICAqL1xuICAgICAgICBwcm9wX25hbWU6IFByb3BUeXBlcy5zdHJpbmcsXG4gICAgICAgIC8qKlxuICAgICAgICAgKiBIb2xkcyB0aGUgbmFtZSBvZiB0aGUgY29tcG9uZW50IHRoYXQgaXMgbG9hZGluZ1xuICAgICAgICAgKi9cbiAgICAgICAgY29tcG9uZW50X25hbWU6IFByb3BUeXBlcy5zdHJpbmcsXG4gICAgfSksXG5cbiAgICAvKipcbiAgICAgKiBVc2VkIHRvIGFsbG93IHVzZXIgaW50ZXJhY3Rpb25zIGluIHRoaXMgY29tcG9uZW50IHRvIGJlIHBlcnNpc3RlZCB3aGVuXG4gICAgICogdGhlIGNvbXBvbmVudCAtIG9yIHRoZSBwYWdlIC0gaXMgcmVmcmVzaGVkLiBJZiBgcGVyc2lzdGVkYCBpcyB0cnV0aHkgYW5kXG4gICAgICogaGFzbid0IGNoYW5nZWQgZnJvbSBpdHMgcHJldmlvdXMgdmFsdWUsIGEgYHZhbHVlYCB0aGF0IHRoZSB1c2VyIGhhc1xuICAgICAqIGNoYW5nZWQgd2hpbGUgdXNpbmcgdGhlIGFwcCB3aWxsIGtlZXAgdGhhdCBjaGFuZ2UsIGFzIGxvbmcgYXNcbiAgICAgKiB0aGUgbmV3IGB2YWx1ZWAgYWxzbyBtYXRjaGVzIHdoYXQgd2FzIGdpdmVuIG9yaWdpbmFsbHkuXG4gICAgICogVXNlZCBpbiBjb25qdW5jdGlvbiB3aXRoIGBwZXJzaXN0ZW5jZV90eXBlYC5cbiAgICAgKi9cbiAgICBwZXJzaXN0ZW5jZTogUHJvcFR5cGVzLm9uZU9mVHlwZShbXG4gICAgICAgIFByb3BUeXBlcy5ib29sLFxuICAgICAgICBQcm9wVHlwZXMuc3RyaW5nLFxuICAgICAgICBQcm9wVHlwZXMubnVtYmVyLFxuICAgIF0pLFxuXG4gICAgLyoqXG4gICAgICogUHJvcGVydGllcyB3aG9zZSB1c2VyIGludGVyYWN0aW9ucyB3aWxsIHBlcnNpc3QgYWZ0ZXIgcmVmcmVzaGluZyB0aGVcbiAgICAgKiBjb21wb25lbnQgb3IgdGhlIHBhZ2UuIFNpbmNlIG9ubHkgYHZhbHVlYCBpcyBhbGxvd2VkIHRoaXMgcHJvcCBjYW5cbiAgICAgKiBub3JtYWxseSBiZSBpZ25vcmVkLlxuICAgICAqL1xuICAgIHBlcnNpc3RlZF9wcm9wczogUHJvcFR5cGVzLmFycmF5T2YoUHJvcFR5cGVzLm9uZU9mKFsndmFsdWUnXSkpLFxuXG4gICAgLyoqXG4gICAgICogV2hlcmUgcGVyc2lzdGVkIHVzZXIgY2hhbmdlcyB3aWxsIGJlIHN0b3JlZDpcbiAgICAgKiBtZW1vcnk6IG9ubHkga2VwdCBpbiBtZW1vcnksIHJlc2V0IG9uIHBhZ2UgcmVmcmVzaC5cbiAgICAgKiBsb2NhbDogd2luZG93LmxvY2FsU3RvcmFnZSwgZGF0YSBpcyBrZXB0IGFmdGVyIHRoZSBicm93c2VyIHF1aXQuXG4gICAgICogc2Vzc2lvbjogd2luZG93LnNlc3Npb25TdG9yYWdlLCBkYXRhIGlzIGNsZWFyZWQgb25jZSB0aGUgYnJvd3NlciBxdWl0LlxuICAgICAqL1xuICAgIHBlcnNpc3RlbmNlX3R5cGU6IFByb3BUeXBlcy5vbmVPZihbJ2xvY2FsJywgJ3Nlc3Npb24nLCAnbWVtb3J5J10pLFxufTtcbiJdfQ== */
+/*@ sourceURL=/Users/marc-andrerivet/projects/release/DashCore/dash-core-components/src/components/Tabs.react.js */</style><style>/**
+ * React Select
+ * ============
+ * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+ * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+ * MIT License: https://github.com/JedWatson/react-select
+*/
+.Select {
+  position: relative;
+}
+.Select input::-webkit-contacts-auto-fill-button,
+.Select input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+.Select input::-ms-clear {
+  display: none !important;
+}
+.Select input::-ms-reveal {
+  display: none !important;
+}
+.Select,
+.Select div,
+.Select input,
+.Select span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Select.is-disabled .Select-arrow-zone {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.35;
+}
+.Select.is-disabled > .Select-control {
+  background-color: #f9f9f9;
+}
+.Select.is-disabled > .Select-control:hover {
+  box-shadow: none;
+}
+.Select.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fff;
+  border-color: #b3b3b3 #ccc #d9d9d9;
+}
+.Select.is-open > .Select-control .Select-arrow {
+  top: -2px;
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+.Select.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+.Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+.Select.is-focused > .Select-control {
+  background: #fff;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1);
+  background: #fff;
+}
+.Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+  padding-right: 42px;
+}
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #333;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label {
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  color: #007eff;
+  outline: none;
+  text-decoration: underline;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  background: #fff;
+}
+.Select.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select.is-open .Select-arrow,
+.Select .Select-arrow-zone:hover > .Select-arrow {
+  border-top-color: #666;
+}
+.Select.Select--rtl {
+  direction: rtl;
+  text-align: right;
+}
+.Select-control {
+  background-color: #fff;
+  border-color: #d9d9d9 #ccc #b3b3b3;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: default;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  height: 36px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.Select-control .Select-input:focus {
+  outline: none;
+  background: #fff;
+}
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  bottom: 0;
+  color: #aaa;
+  left: 0;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Select-input {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.Select-input > input {
+  width: 100%;
+  background: none transparent;
+  border: 0 none;
+  box-shadow: none;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  outline: none;
+  line-height: 17px;
+  /* For IE 8 compatibility */
+  padding: 8px 0 12px;
+  /* For IE 8 compatibility */
+  -webkit-appearance: none;
+}
+.is-focused .Select-input > input {
+  cursor: text;
+}
+.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+.Select-loading-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+}
+.Select-loading {
+  -webkit-animation: Select-animation-spin 400ms infinite linear;
+  -o-animation: Select-animation-spin 400ms infinite linear;
+  animation: Select-animation-spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-right-color: #333;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.Select-clear-zone {
+  -webkit-animation: Select-animation-fadeIn 200ms;
+  -o-animation: Select-animation-fadeIn 200ms;
+  animation: Select-animation-fadeIn 200ms;
+  color: #999;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 17px;
+}
+.Select-clear-zone:hover {
+  color: #D0021B;
+}
+.Select-clear {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+}
+.Select--multi .Select-clear-zone {
+  width: 17px;
+}
+.Select-arrow-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  padding-right: 5px;
+}
+.Select--rtl .Select-arrow-zone {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  position: relative;
+}
+.Select-control > *:last-child {
+  padding-right: 5px;
+}
+.Select--multi .Select-multi-value-wrapper {
+  display: inline-block;
+}
+.Select .Select-aria-only {
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  float: left;
+}
+@-webkit-keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+}
+.Select-option {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+.Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.Select-option.is-selected {
+  background-color: #f5faff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.04);
+  color: #333;
+}
+.Select-option.is-focused {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  color: #333;
+}
+.Select-option.is-disabled {
+  color: #cccccc;
+  cursor: default;
+}
+.Select-noresults {
+  box-sizing: border-box;
+  color: #999999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+.Select--multi .Select-input {
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0;
+}
+.Select--multi.Select--rtl .Select-input {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.Select--multi.has-value .Select-input {
+  margin-left: 5px;
+}
+.Select--multi .Select-value {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  border-radius: 2px;
+  border: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border: 1px solid rgba(0, 126, 255, 0.24);
+  color: #007eff;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.Select--multi .Select-value-icon,
+.Select--multi .Select-value-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Select--multi .Select-value-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  padding: 2px 5px;
+}
+.Select--multi a.Select-value-label {
+  color: #007eff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select--multi a.Select-value-label:hover {
+  text-decoration: underline;
+}
+.Select--multi .Select-value-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-right: 1px solid rgba(0, 126, 255, 0.24);
+  padding: 1px 5px 3px;
+}
+.Select--multi .Select-value-icon:hover,
+.Select--multi .Select-value-icon:focus {
+  background-color: #d8eafd;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 113, 230, 0.08);
+  color: #0071e6;
+}
+.Select--multi .Select-value-icon:active {
+  background-color: #c2e0ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.24);
+}
+.Select--multi.Select--rtl .Select-value {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.Select--multi.Select--rtl .Select-value-icon {
+  border-right: none;
+  border-left: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-left: 1px solid rgba(0, 126, 255, 0.24);
+}
+.Select--multi.is-disabled .Select-value {
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  color: #333;
+}
+.Select--multi.is-disabled .Select-value-icon {
+  cursor: not-allowed;
+  border-right: 1px solid #e3e3e3;
+}
+.Select--multi.is-disabled .Select-value-icon:hover,
+.Select--multi.is-disabled .Select-value-icon:focus,
+.Select--multi.is-disabled .Select-value-icon:active {
+  background-color: #fcfcfc;
+}
+@keyframes Select-animation-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes Select-animation-spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+</style><style>.dash-spreadsheet.dash-freeze-left,
+.dash-spreadsheet.dash-freeze-top {
+  width: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+}
+.dash-spreadsheet.dash-freeze-left {
+  max-width: 500px;
+}
+.dash-spreadsheet.dash-freeze-top,
+.dash-spreadsheet.dash-virtualized {
+  max-height: 500px;
+}
+.dash-tooltip {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 500;
+}
+.dash-tooltip .dash-table-tooltip {
+  position: relative;
+  background-color: #f6f6f6;
+  max-width: 300px;
+  min-width: 300px;
+  padding: 2px 10px;
+}
+.dash-tooltip[data-attr-anchor='top'] {
+  margin-top: 10px;
+}
+.dash-tooltip[data-attr-anchor='top']:after,
+.dash-tooltip[data-attr-anchor='top']:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.dash-tooltip[data-attr-anchor='top']:after {
+  border-color: transparent;
+  border-bottom-color: #f6f6f6;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.dash-tooltip[data-attr-anchor='top']:before {
+  border-color: transparent;
+  border-bottom-color: #e4e4e4;
+  border-width: 9px;
+  margin-left: -9px;
+}
+.dash-tooltip[data-attr-anchor='bottom'] {
+  margin-bottom: 10px;
+}
+.dash-tooltip[data-attr-anchor='bottom']:after,
+.dash-tooltip[data-attr-anchor='bottom']:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.dash-tooltip[data-attr-anchor='bottom']:after {
+  border-color: transparent;
+  border-top-color: #f6f6f6;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.dash-tooltip[data-attr-anchor='bottom']:before {
+  border-color: transparent;
+  border-top-color: #e4e4e4;
+  border-width: 9px;
+  margin-left: -9px;
+}
+.dash-spreadsheet-menu {
+  display: flex;
+  flex-direction: row;
+}
+.dash-spreadsheet-menu > * {
+  padding-right: 5px;
+}
+.dash-spreadsheet-menu .dash-spreadsheet-menu-item {
+  position: relative;
+}
+.dash-spreadsheet-menu .dash-spreadsheet-menu-item .show-hide-menu {
+  background-color: #fafafa;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 500;
+}
+.dash-spreadsheet-menu .dash-spreadsheet-menu-item .show-hide-menu .show-hide-menu-item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.dash-spreadsheet-menu .dash-spreadsheet-menu-item .show-hide-menu .show-hide-menu-item label {
+  white-space: nowrap;
+}
+.dash-table-container .previous-next-container {
+  display: inline-block;
+  float: right;
+  padding: 5px 0px;
+}
+.dash-table-container .previous-next-container .page-number {
+  font-family: monospace;
+  display: inline-block;
+}
+.dash-table-container .previous-next-container .page-number .last-page {
+  min-width: 30px;
+  display: inline-block;
+  text-align: center;
+  margin: 0.5em;
+}
+.dash-table-container .previous-next-container input.current-page {
+  display: inline-block;
+  border-bottom: solid lightgrey 1px !important;
+  color: black;
+  border: none;
+  width: 30px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 10pt;
+  margin: 0.5em;
+}
+.dash-table-container .previous-next-container input.current-page::placeholder {
+  color: black;
+}
+.dash-table-container .previous-next-container input.current-page:focus {
+  outline: none;
+}
+.dash-table-container .previous-next-container input.current-page:focus::placeholder {
+  opacity: 0;
+}
+.dash-table-container .previous-next-container button.previous-page,
+.dash-table-container .previous-next-container button.next-page,
+.dash-table-container .previous-next-container button.first-page,
+.dash-table-container .previous-next-container button.last-page {
+  transition-duration: 400ms;
+  padding: 5px;
+  border: none;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.dash-table-container .previous-next-container button.previous-page:hover,
+.dash-table-container .previous-next-container button.next-page:hover,
+.dash-table-container .previous-next-container button.first-page:hover,
+.dash-table-container .previous-next-container button.last-page:hover {
+  color: hotpink;
+}
+.dash-table-container .previous-next-container button.previous-page:hover:disabled,
+.dash-table-container .previous-next-container button.next-page:hover:disabled,
+.dash-table-container .previous-next-container button.first-page:hover:disabled,
+.dash-table-container .previous-next-container button.last-page:hover:disabled {
+  color: graytext;
+}
+.dash-table-container .previous-next-container button.previous-page:focus,
+.dash-table-container .previous-next-container button.next-page:focus,
+.dash-table-container .previous-next-container button.first-page:focus,
+.dash-table-container .previous-next-container button.last-page:focus {
+  outline: none;
+}
+.dash-table-container .dash-spreadsheet-container {
+  /* The "normal" reset CSS */
+  /* The "modified" reset CSS applied to the table to ignore markdown cells */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* focus happens after copying to clipboard */
+}
+.dash-table-container .dash-spreadsheet-container th {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.dash-table-container .dash-spreadsheet-container th,
+.dash-table-container .dash-spreadsheet-container td {
+  margin: 0;
+  padding: 0;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown),
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) {
+  margin: 0;
+  padding: 0;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) dl,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) dl,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) dt,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) dt,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) dd,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) dd,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) ul,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) ul,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) ol,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) ol,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) li,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) li,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h1,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h1,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h2,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h2,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h3,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h3,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h4,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h4,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h5,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h5,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h6,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h6,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) pre,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) pre,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) code,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) code,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) form,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) form,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) fieldset,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) fieldset,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) legend,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) legend,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) input,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) input,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) textarea,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) textarea,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) p,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) p,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) blockquote,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) blockquote,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) th,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) th,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) td,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) td {
+  margin: 0;
+  padding: 0;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) table,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) fieldset,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) fieldset,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) img,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) img {
+  border: 0;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) address,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) address,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) caption,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) caption,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) cite,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) cite,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) code,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) code,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) dfn,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) dfn,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) em,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) em,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) strong,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) strong,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) th,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) th,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) var,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) var {
+  font-style: normal;
+  font-weight: normal;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) ol,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) ol,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) ul,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) ul {
+  list-style: none;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) caption,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) caption,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) th,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) th {
+  text-align: left;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h1,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h1,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h2,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h2,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h3,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h3,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h4,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h4,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h5,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h5,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) h6,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) q:before,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) q:before,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) q:after,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) q:after {
+  content: '';
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) abbr,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) abbr,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) acronym,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) acronym {
+  border: 0;
+  font-variant: normal;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) sup,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) sup {
+  vertical-align: text-top;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) sub,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) sub {
+  vertical-align: text-bottom;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) input,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) input,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) textarea,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) textarea,
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) select,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+.dash-table-container .dash-spreadsheet-container th > div:not(.cell-markdown) legend,
+.dash-table-container .dash-spreadsheet-container td > div:not(.cell-markdown) legend {
+  color: #000;
+}
+.dash-table-container .dash-spreadsheet-container input[type="button"] {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.dash-table-container .dash-spreadsheet-container *:focus {
+  outline: none;
+}
+.dash-table-container .dash-spreadsheet-container table {
+  font-size: inherit;
+  pointer-events: none;
+}
+.dash-table-container .dash-spreadsheet-container table td,
+.dash-table-container .dash-spreadsheet-container table th {
+  pointer-events: initial;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /*
+             * fixes Firefox td height bug on td > dropdown children
+             * bug should only appear on FF but
+             * @supports = scoped to Firefox only
+             * to minimize side effects
+             */
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner *,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner *:after,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner *:before {
+  box-sizing: inherit;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select {
+  overflow: hidden;
+  position: static;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select-control {
+  background-color: inherit;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .Select-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -2px;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .marker-row tr {
+  visibility: hidden !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .marker-row td,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .marker-row th {
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-filter input::placeholder {
+  color: inherit;
+  font-size: 0.8em;
+  padding-right: 5px;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-filter + .dash-filter:not(:hover):not(:focus-within) input::placeholder {
+  color: transparent;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-filter.invalid {
+  background-color: pink;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-empty-11) .row-0 tr:last-of-type td,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-empty-11) .row-0 tr:last-of-type th {
+  border-bottom: none !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-empty-01) .cell-0-0 tr td:last-of-type,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-empty-01) .cell-1-0 tr td:last-of-type,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-empty-01) .cell-0-0 tr th:last-of-type,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-empty-01) .cell-1-0 tr th:last-of-type {
+  border-right: none !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-0-0 {
+  overflow: hidden;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-0-0 td.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-1-0 td.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-0-0 th.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-1-0 th.phantom-cell {
+  border-color: transparent !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-0-1 td.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-1-1 td.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-0-1 th.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .cell-1-1 th.phantom-cell {
+  border-color: transparent inherit transparent transparent !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized {
+  overflow: hidden !important;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left .row-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top .row-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized .row-0 {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left .row-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top .row-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized .row-1 {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left .cell-0-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top .cell-0-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized .cell-0-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left .cell-1-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top .cell-1-0,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized .cell-1-0 {
+  flex: 0 0 auto;
+  left: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 400;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left .cell-0-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top .cell-0-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized .cell-0-1 {
+  z-index: 300;
+  flex: 0 0 auto;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-left .cell-1-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-freeze-top .cell-1-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-virtualized .cell-1-1 {
+  flex: 0 0 auto;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-fill-width .cell-0-1,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-fill-width .cell-1-1 {
+  flex: 1 0 auto;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-fill-width .cell table {
+  width: 100%;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  background-color: inherit;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td.focused {
+  margin: -1px;
+  z-index: 200;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-cell-value-container {
+  width: 100%;
+  height: 100%;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-input-cell-value-container {
+  position: relative;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-cell-value {
+  height: 100%;
+  width: 100%;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-cell-value.unfocused::selection {
+  background-color: transparent;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-cell-value.unfocused {
+  caret-color: transparent;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td input.dash-cell-value {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .cell-value-shadow {
+  margin: auto 0;
+  opacity: 0;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .input-cell-value-shadow {
+  display: inline-block;
+  height: initial;
+  width: initial;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dropdown-cell-value-shadow {
+  display: block;
+  height: 0px;
+  padding: 0 42px 0 10px;
+}
+@supports (-moz-appearance:none) {
+  .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td.dropdown .dash-cell-value-container {
+    height: auto;
+  }
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th.dash-filter {
+  position: relative;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th.dash-filter input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  white-space: nowrap;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th .column-header--clear,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th .column-header--delete,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th .column-header--edit,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th .column-header--hide,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th .column-header--sort {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  cursor: pointer;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr {
+  min-height: 30px;
+  height: 30px;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  background-clip: padding-box;
+  padding: 2px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: right;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td.phantom-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th.phantom-cell {
+  visibility: hidden;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td div.dash-cell-value,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th div.dash-cell-value {
+  display: inline;
+  vertical-align: middle;
+  white-space: inherit;
+  overflow: inherit;
+  text-overflow: inherit;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td div.dash-cell-value.cell-markdown,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th div.dash-cell-value.cell-markdown {
+  text-align: left;
+  font-family: sans-serif;
+  display: inline-block;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td div.dash-cell-value.cell-markdown blockquote,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th div.dash-cell-value.cell-markdown blockquote {
+  white-space: pre;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner textarea {
+  white-space: pre;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+  border-collapse: collapse;
+  font-family: monospace;
+  --accent: hotpink;
+  --border: lightgrey;
+  --text-color: #3c3c3c;
+  --hover: #fdfdfd;
+  --background-color-ellipses: #fdfdfd;
+  --faded-text: #fafafa;
+  --faded-text-header: #b4b4b4;
+  --selected-background: rgba(255, 65, 54, 0.2);
+  --faded-dropdown: #f0f0f0;
+  --muted: #c8c8c8;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table:focus {
+  outline: none;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner thead {
+  display: table-row-group;
+}
+.dash-table-container .dash-spreadsheet-container .elip {
+  text-align: center;
+  width: 100%;
+  background-color: var(--background-color-ellipses);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td.dropdown {
+  /*
+             * To view the dropdown's contents, we need
+             * overflow-y: visible.
+             * Unfortunately, overflow-x: hidden and overflow-y: visible
+             * can't both be set at the same time.
+             * So, we have to make both overflow-x: visible and overflow-y: visble
+             *
+             * See https://stackoverflow.com/questions/6421966/
+             *
+             * There might be another solution with parent divs, but I haven't
+             * tried it.
+             */
+  overflow-x: visible;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner :not(.cell--selected) tr:hover,
+.dash-table-container .dash-spreadsheet-container tr:hover input :not(.cell--selected) {
+  background-color: var(--hover);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  background-color: #fafafa;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  background-color: white;
+}
+.dash-table-container .dash-spreadsheet-container .expanded-row--empty-cell {
+  background-color: transparent;
+}
+.dash-table-container .dash-spreadsheet-container .expanded-row {
+  text-align: center;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input:not([type=radio]):not([type=checkbox]) {
+  padding: 0px;
+  margin: 0px;
+  height: calc(100% - 1px);
+  line-height: 30px;
+  border: none;
+  font-family: inherit;
+  text-align: right;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: transparent;
+  /* so as to not overlay the box shadow */
+  /* browser's default text-shadow is `$color 0px 0px 0px;`
+             * for `input`, which makes it look a little bit heavier than dropdowns
+             * or bare `td`
+             */
+  text-shadow: none;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input.unfocused {
+  color: transparent;
+  text-shadow: 0 0 0 var(--text-color);
+  cursor: default;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input.unfocused:focus {
+  outline: none;
+}
+.dash-table-container .dash-spreadsheet-container .toggle-row {
+  border: none;
+  box-shadow: none;
+  width: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  color: var(--faded-text);
+}
+.dash-table-container .dash-spreadsheet-container .toggle-row--expanded {
+  color: var(--accent);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr:hover .toggle-row {
+  color: var(--accent);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-delete-cell,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-delete-header {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  color: var(--muted);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-delete-cell:hover,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .dash-delete-header:hover {
+  color: var(--accent);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner [class^='column-header--'] {
+  cursor: pointer;
+  float: left;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--select {
+  height: auto;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--select,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--sort {
+  color: var(--faded-text-header);
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--clear,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--delete,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--edit,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header--hide {
+  opacity: 0.1;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th:hover [class^='column-header--']:not(.disabled) {
+  color: var(--accent);
+  opacity: 1;
+}
+</style><style>.dash-spreadsheet .Select,
+.dash-spreadsheet .Select-control {
+    border: none;
+    cursor: pointer;
+    height: 30px;  /* matches the td height and line-height */
+    border: none;
+}
+
+.dash-spreadsheet .Select-placeholder,
+.dash-spreadsheet .Select--single > .Select-control .Select-value {
+    height: 100%;
+    line-height: inherit;
+}
+
+.dash-spreadsheet .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.dash-spreadsheet .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: var(--text-color);
+}
+
+.dash-spreadsheet .Select:hover,
+.dash-spreadsheet .Select-control:hover {
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.dash-spreadsheet .Select-menu-outer {
+    z-index: 100;
+}
+
+.dash-spreadsheet .Select-arrow {
+    border-top-color: var(--faded-dropdown);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.dash-spreadsheet .Select-control:hover .Select-arrow {
+    border-top-color: var(--accent);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.dash-spreadsheet .is-open > .Select-control .Select-arrow {
+    border-bottom-color: var(--background-color-8-react-select);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.dash-spreadsheet .Select--multi .Select-value,
+.dash-spreadsheet .Select--multi a.Select-value-label {
+    color: var(--color-8-react-select);
+}
+
+.dash-spreadsheet .Select {
+    border-radius: 0;
+}
+
+.dash-spreadsheet .Select.is-disabled > .Select-control {
+    border: none;
+}
+
+.dash-spreadsheet .Select--multi .Select-value-icon:hover,
+.dash-spreadsheet .Select--multi .Select-value-icon:focus {
+    font-weight: bold;
+}
+
+.dash-spreadsheet .Select.is-disabled .Select-control {
+    cursor: not-allowed;
+}
+
+.dash-spreadsheet .Select-menu-outer {
+    background-color: white;
+    border: none;
+    border-bottom: thin var(--border) solid;
+    border-radius: 0;
+    border-top: none;
+}
+
+.dash-spreadsheet .Select-option {
+    background-color: inherit;
+    color: var(--accent);
+}
+
+.dash-spreadsheet .Select-option:hover {
+    font-weight: bold;
+    color: var(--accent);
+    background-color: var(--hover);
+}
+
+.dash-spreadsheet .Select.is-focused:not(.is-open) > .Select-control {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff;
+}
+
+.dash-spreadsheet .Select-option.is-focused {
+    background-color: white;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.dash-spreadsheet .Select-clear {
+    color: transparent;
+}
+.dash-spreadsheet .Select:hover .Select-clear {
+    color: var(--accent);
+}
+
+.dash-spreadsheet .Select-control {
+    padding-left: 2px;
+}
+</style></head>
+    <body cz-shortcut-listen="true">
+        
+<div id="react-entry-point"><div><div style="width: 25%; border: 1px solid rgb(238, 238, 238); padding: 30px 30px 30px 120px; box-shadow: rgb(204, 204, 204) 0px 2px 2px; display: inline-block; vertical-align: top;"><h4> Choisissez une ville: </h4><div id="ville-picker" class="dash-dropdown"><div class="Select has-value is-clearable is-searchable Select--single"><div class="Select-control"><div class="Select-multi-value-wrapper" id="react-select-2--value"><div class="Select-value"><span class="Select-value-label" role="option" aria-selected="true" id="react-select-2--value-item">Paris (75000)</span></div><div class="Select-input" style="display: inline-block;"><input id="ville-picker" aria-activedescendant="react-select-2--value" aria-expanded="false" aria-haspopup="false" aria-owns="" role="combobox" value="" style="box-sizing: content-box; width: 5px;"><div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: &quot;Times New Roman&quot;; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div></div></div><span aria-label="Clear value" class="Select-clear-zone" title="Clear value"><span class="Select-clear">×</span></span><span class="Select-arrow-zone"><span class="Select-arrow"></span></span></div></div></div></div><div><div id="tabs-parent" class="jsx-4017309047 tab-parent "><div id="tabs" class="jsx-4017309047 tab-container "><div class="jsx-2411128311 tab  tab--selected "><span class="jsx-2411128311">Infos Générales</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Démographie</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Santé et social</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Immobilier</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Emploi</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Salaires</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">CSP</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Automobiles</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Délinquance</span></div><div class="jsx-2411128311 tab "><span class="jsx-2411128311">Européennes 2019</span></div></div><div class="jsx-4017309047 tab-content "><div style="background: blue; color: white; text-align: center; padding: 10px 0px;"><h3>Infos Générales</h3></div><div style="width: 40%; border: 1px solid rgb(238, 238, 238); box-shadow: rgb(204, 204, 204) 0px 2px 2px; display: inline-block; vertical-align: top; padding: 60px 30px;"><div id="table_infos" class="dash-table-container" style="position: relative;"><div class="dash-spreadsheet-menu"><div></div></div><div class="dash-spreadsheet-container dash-spreadsheet dash-empty-01 dash-no-filter dash-fill-width" style="width: 100%;"><div class="dash-spreadsheet-inner dash-spreadsheet dash-empty-01 dash-no-filter dash-fill-width" style="min-height: 100%; min-width: 100%;"><div class="row row-0"><div class="cell cell-0-0 "></div><div class="cell cell-0-1 " style="margin-right: 17px;"></div></div><div class="row row-1"><div class="cell cell-1-0 "></div><div class="cell cell-1-1 dash-fixed-content"><table class="cell-table" tabindex="-1"><tbody><tr><th data-dash-column="intitule" colspan="1" class="dash-header column-0 " style="font-family: Montserrat; background-color: rgb(230, 230, 230); font-weight: bold; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div><span class="column-header-name">   </span></div></th><th data-dash-column="donnee" colspan="1" class="dash-header column-1 cell--right-last " style="font-family: Montserrat; background-color: rgb(230, 230, 230); font-weight: bold; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div><span class="column-header-name">Paris (75000)</span></div></th></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="0" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Code Insee</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="0" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">75056</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="1" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Région</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="1" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Île-de-France</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="2" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Département</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="2" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Paris</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="3" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Code postal (CP)</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="3" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">75000</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="4" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Nom des habitants</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="4" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Parisiens, parisiennes</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="5" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Population (2017)</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="5" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">2&nbsp;187&nbsp;526 hab.</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="6" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Population : rang national (2017)</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="6" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">n°1 </div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="7" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Densité de population (2017)</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="7" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">20&nbsp;755 hab/km²</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="8" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Taux de chômage (2017)</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="8" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">12,1 %</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="9" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Superficie (surface)</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="9" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">105,4 km²</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="10" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Altitude min.</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="10" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">27 mètre(s)</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="11" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Altitude max.</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="11" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">127 mètre(s)</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="12" style="font-family: Montserrat; text-align: left; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Latitude</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="12" style="font-family: Montserrat; border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">48.8589</div></td></tr><tr><td tabindex="-1" class="dash-cell column-0" data-dash-column="intitule" data-dash-row="13" style="font-family: Montserrat; text-align: left; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">Longitude</div></td><td tabindex="-1" class="dash-cell column-1" data-dash-column="donnee" data-dash-row="13" style="font-family: Montserrat; background-color: rgb(248, 248, 248); border-width: 1px; border-style: solid; border-color: rgb(211, 211, 211);"><div class="unfocused dash-cell-value" tabindex="-1">2.33828</div></td></tr></tbody></table></div></div></div></div></div></div><div id="map" style="display: inline-block; vertical-align: top; width: 50%; padding: 15px 0px 15px 10px;"><iframe height="600" width="100%" src="./Dashboard-DataFrance_files/saved_resource.html"></iframe></div></div></div></div></div></div>
+
+        <footer>
+            <script id="_dash-config" type="application/json">{"url_base_pathname": null, "requests_pathname_prefix": "/", "ui": false, "props_check": false, "show_undo_redo": false, "suppress_callback_exceptions": false}</script>
+            <script src="./Dashboard-DataFrance_files/polyfill@7.v1_5_1m1593702306.8.7.min.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/react@16.v1_5_1m1593702306.13.0.min.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/react-dom@16.v1_5_1m1593702306.13.0.min.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/prop-types@15.v1_5_1m1593702306.7.2.min.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/dash_core_components.v1_10_1m1593702304.min.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/dash_core_components-shared.v1_10_1m1593702304.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/bundle.v4_8_1m1593702306.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/dash_html_components.v1_0_3m1593702307.min.js.téléchargement"></script>
+<script src="./Dashboard-DataFrance_files/dash_renderer.v1_5_1m1593702306.min.js.téléchargement"></script>
+            <script id="_dash-renderer" type="application/javascript">var renderer = new DashRenderer();</script>
+        </footer>
+    
+</body></html>

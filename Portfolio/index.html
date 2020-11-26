@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Btn flottant gauche petit menu -->
+
+    <div class="btn-rond-menu">
+        <div class="cont-ligne">
+            <div class="ligne-unique"></div>
+        </div>
+    </div>
+
+    <!-- Navigation verticale -->
+
+    <nav class="nav-gauche">
+
+        <div class="blocs-menu">
+            <div class="cercle-portrait">
+                <img src="ressources/Photo.jpg" alt="portrait img">
+            </div>
+        </div>
+
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#accueil">
+                    Accueil
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#pres">
+                    Compétences
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#port">
+                    Portfolio
+                </a>
+            </span>
+        </div>       
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#contact">
+                    Contact
+                </a>
+            </span>
+        </div>
+
+        <div class="blocs-menu">
+            <div class="logo-cercle">
+                <a href="#contact">
+                    <img src="ressources/mail-inbox-app.svg" alt="Icone de contact" />
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Section Accueil -->
+
+    <section class="accueil" id="accueil">
+        <h1>Bienvenue sur mon portfolio !</h1>
+        <p class="txt-animation"></p>
+        <a href="#port" class="btn-acc btn-acc1">Portfolio</a>
+        <a href="#pres" class="btn-acc btn-acc2">Compétences</a>
+
+        <div class="medias">
+            <a href="https://github.com/Sterga" target="blank">
+                <div class="media media1">
+                    <img src="ressources/github.svg" alt="github icone" class="icone-medias">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/radia-ahmed-ali/" target="blank">
+                <div class="media media2">
+                    <img src="ressources/linkedin.svg" alt="linkedin icone" class="icone-medias">
+                </div>
+            </a>
+       
+
+            <a href="#pres">
+                <div class="media btn-rond">
+                    <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+                </div>
+            </a>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- Section Présentation -->
+
+    <section class="presentation" id="pres">
+
+        <h2 class="titre-pres">Compétences</h2>
+
+        <div class="container-presentation">
+
+            <div class="fond-forme"></div>
+
+            <div class="pres-droite">
+
+                <ul class="liste-presentation">
+
+                    <li class="item-liste fa fa-check">
+                        <p class="txt-liste">Python</p>
+                    </li>
+                    <br />
+                    <li class="item-liste fa fa-check">
+                        <p class="txt-liste">Machine Learning</p>
+                    </li>
+                    <br />
+                    <li class="item-liste fa fa-check">
+                        <p class="txt-liste">Deep Learning</p>
+                    </li>
+                    <br />
+                    <li class="item-liste fa fa-check">
+                        <p class="txt-liste">Data Mining</p>
+                    </li>
+                    <br />
+                    <li class="item-liste fa fa-check">
+                        <p class="txt-liste">Méthodes Agiles</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="pres-gauche">
+
+                <p>Si vous êtes intéressé par mon profil, vous pouvez télécharger mon CV en cliquant sur le bouton ci-dessous.</p>
+                <br>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="chargement-cv">
+
+            <a href="ressources/CV_Novembre2020.pdf" class="button-sub" download><i class="fa fa-download"></i>Télécharger mon CV</a>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- Section Portfolio -->
+
+    <section class="portfolio" id="port">
+
+
+        <h2 class="titre-port">Mon Portfolio</h2>
+        <p class="pres-port">Je vous présente un échantillon de mes projets réalisés durant mon temps libre.</p>
+
+        <div class="cont-portfolio">
+
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/Face-detection-image.jpg" alt="img portfolio">
+                </div>
+                <h3>Détecteur de visage</h3>
+                <p><strong></strong>Création d’une IA de détection de visage à l'aide d'Adaboost à partir du dataset... :</strong></p>
+
+                <a href="https://github.com/Sterga/Projets_IA/tree/master/Projet1_Detecteur_Images" class="btn-projets">Découvrez le code</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/image-classification.jpg" alt="img portfolio">
+                </div>
+                <h3>Classification d'images</h3>
+                <p>Classification d'images à l'aide du classificateur des k voisins les plus proches.</p>
+                <a href="https://github.com/Sterga/Projets_IA/tree/master/Projet2_Classifieur_Images" class="btn-projets">Découvrez le code</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/Image-chiffres.jpg" alt="img portfolio">
+                </div>
+                <h3>Reconnaissance manuscrite</h3>
+                <p>Construction d'un modèle de réseau de neurones pour une reconnaissance de chiffres.</p>
+                <br />
+                <a href="https://github.com/Sterga/Projets_IA/tree/master/Projet3_Reconnaissance_Manuscrite" class="btn-projets">Découvrez le code</a>
+            </div>
+
+
+            <div class="item vague2">
+                <div class="cont-img-port">
+                    <img src="ressources/Image-Spam.jpg" alt="img portfolio">
+                </div>
+                <h3>Détecteur de Spam</h3>
+                <p>Application de l'algorithme Naïve Bayésienne puis le principe du TF-IDF pour détecter les Spams.</p>
+                <a href="https://github.com/Sterga/Projets_IA/tree/master/Projet4_Detecteur_Spam/spam-detection" class="btn-projets">Découvrez le code</a>
+            </div>
+
+
+            <div class="item vague2">
+                <div class="cont-img-port">
+                    <img src="ressources/Image-Rec-Faciale.jpg" alt="img portfolio">
+                </div>
+                <h3>Reconnaissance faciale</h3>
+                <p>Il s'agit de reconnaître la ou le/s personne/s présente/s sur une photo ou vidéo. </p>
+                <br />
+                <a href="https://github.com/Sterga/Projets_IA/tree/master/Projet5_Reconnaissance_Faciale" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+
+            <div class="item vague2">
+                <div class="cont-img-port">
+                    <img src="ressources/Dashboard.jpg" alt="img portfolio">
+                </div>
+                <h3>Dashboard - Statistiques</h3>
+                <p>Réalisation d'un dashboard en scrapant les données principales de l'INSEE reprenant les données françaises et en utilisant Dash.</p>
+                <a href="https://datafrance.herokuapp.com/" class="btn-projets">Accès à l'application</a>
+            </div>
+
+
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="ressources/Image-Decision.jpg" alt="img portfolio">
+                </div>
+                <h3>Outil d'aide à la décision</h3>
+                <p>Réalisation d'un outil d'aide à la décision (Django)</p>
+                <br />
+                <br />
+                <a href="https://www.the-best-decision.com/" class="btn-projets">Accès à l'application</a>
+            </div>
+
+
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="ressources/Cour-Devises.jpg" alt="img portfolio">
+                </div>
+                <h3>Tableau de bord - Devises</h3>
+                <p>Création d'un tableau de bord pour afficher l'évolution du cours de devises en temps réel (Django)</p>
+                <a href="http://radia.pythonanywhere.com/days=365&currencies=USD" class="btn-projets">Accès à l'application</a>
+            </div>
+
+
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="ressources/Applications-bureau.jpg" alt="img portfolio">
+                </div>
+                <h3>Applications bureau</h3>
+                <p>
+                    5 applications bureau réalisées avec PySide2
+                </p>
+                <a href="https://github.com/Sterga/applications-bureau" class="btn-projets">Découvrez les codes</a>
+            </div>
+
+
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="ressources/Flappy-Bird-V2.jpg" alt="img portfolio">
+                </div>
+                <h3>Python-game</h3>
+                <p>Jeu Flappy bird réalisé avec Pygame</p>
+                <a href="https://github.com/Sterga/python-game" class="btn-projets">Découvrez le code</a>
+            </div>
+
+
+
+
+        </div>
+
+
+    </section>
+
+   
+    <!-- Section Contact -->
+
+    <section class="section-contact" id="contact">
+
+        <h2><strong>Rentrons</strong> en Contact</h2>
+
+        <div class="container-form">
+
+            <p>Si vous avez la moindre question au sujet de mes projets et/ou de mon profil, n'hésitez pas à me contacter. </p>
+            <ul class="contact-link">
+                <li class="item-liste fa fa-linkedin" aria-hidden="true">
+                    <p class="txt-liste">Radia Ahmed-Ali</p>
+                </li>
+                <hr />
+                <br />
+
+                <li class="item-liste fa fa-envelope" aria-hidden="true">
+                    <p class="txt-liste">radia.ahmedali8@gmail.com</p>
+                </li>
+                <hr />
+                <br />
+                <li class="item-liste fa fa-home" aria-hidden="true">
+                    <p class="txt-liste">Paris, France</p>
+                </li>
+                <hr />
+            </ul>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        Tout Droits réservés &copy;
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://use.fontawesome.com/b51cf2ed1e.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
